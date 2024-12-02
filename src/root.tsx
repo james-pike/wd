@@ -1,4 +1,4 @@
-import { component$, useContextProvider, useStyles$ } from "@builder.io/qwik";
+import { component$, useStyles$ } from "@builder.io/qwik";
 import { QwikCityProvider, RouterOutlet, ServiceWorkerRegister } from "@builder.io/qwik-city";
 import { RouterHead } from "~/components/common/RouterHead";
 import { DarkThemeLauncher } from "~/components/common/DarkThemeLauncher";
@@ -15,8 +15,7 @@ import {
   ThemePrimaryColors,
   ThemeStyles,
 } from '@qwik-ui/utils';
-import { AppState } from "./_state/app-state.type";
-import { APP_STATE_CONTEXT_ID } from "./_state/app-state-context-id";
+
 
 
 
