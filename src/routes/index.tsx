@@ -25,7 +25,7 @@ export default component$(() => {
       <Features
         highlight="Features"
         title="What you get with Qwind"
-        subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
+        subtitle="Sed ut perspiciatios unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
         items={[
           {
             title: "Qwik + Tailwind CSS Integration",
