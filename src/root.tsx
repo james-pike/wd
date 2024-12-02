@@ -1,10 +1,10 @@
-import { component$, useStyles$ } from "@builder.io/qwik";
+import { component$, useContextProvider, useStore, useStyles$ } from "@builder.io/qwik";
 import { QwikCityProvider, RouterOutlet, ServiceWorkerRegister } from "@builder.io/qwik-city";
 import { RouterHead } from "~/components/common/RouterHead";
 import { DarkThemeLauncher } from "~/components/common/DarkThemeLauncher";
 
 // import "@fontsource-variable/inter";
-import styles from  "~/global.css?inline";
+import styles from './global.css?inline';
 import { ThemeProvider } from "./lib/provider";
 
 import {
@@ -15,6 +15,10 @@ import {
   ThemePrimaryColors,
   ThemeStyles,
 } from '@qwik-ui/utils';
+import { APP_STATE_CONTEXT_ID } from "./_state/app-state-context-id";
+import { AppState } from "./_state/app-state.type";
+
+
 
 
 
@@ -29,6 +33,14 @@ export default component$(() => {
    */
 
   useStyles$(styles);
+  const appState = useStore<AppState>({
+    featureFlags: {
+      showStyled: true,
+      showNeumorphic: import.meta.env.DEV,
+    },
+  });
+
+  useContextProvider(APP_STATE_CONTEXT_ID, appState);
   
 
   return (

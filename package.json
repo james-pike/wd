@@ -37,7 +37,8 @@
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.1.0",
     "node-fetch": "3.3.2",
-    "tailwind-merge": "^2.5.2"
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@builder.io/qwik": "^1.8.0",
