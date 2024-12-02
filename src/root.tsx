@@ -1,11 +1,25 @@
-import { component$, useStyles$ } from "@builder.io/qwik";
+import { component$, useContextProvider, useStyles$ } from "@builder.io/qwik";
 import { QwikCityProvider, RouterOutlet, ServiceWorkerRegister } from "@builder.io/qwik-city";
-
 import { RouterHead } from "~/components/common/RouterHead";
 import { DarkThemeLauncher } from "~/components/common/DarkThemeLauncher";
 
 // import "@fontsource-variable/inter";
-import styles from  "~/assets/styles/global.css?inline";
+import styles from  "~/global.css?inline";
+import { ThemeProvider } from "./lib/provider";
+
+import {
+  ThemeBaseColors,
+  ThemeBorderRadiuses,
+  ThemeFonts,
+  ThemeModes,
+  ThemePrimaryColors,
+  ThemeStyles,
+} from '@qwik-ui/utils';
+import { AppState } from "./_state/app-state.type";
+import { APP_STATE_CONTEXT_ID } from "./_state/app-state-context-id";
+
+
+
 
 export default component$(() => {
   /**
@@ -16,6 +30,7 @@ export default component$(() => {
    */
 
   useStyles$(styles);
+  
 
   return (
     <QwikCityProvider>
@@ -31,8 +46,22 @@ export default component$(() => {
         <DarkThemeLauncher />
         <ServiceWorkerRegister />
       </head>
-      <body class="text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-gray-900 antialiased">
-        <RouterOutlet />
+      <body class="">
+      <ThemeProvider
+          attribute="class"
+          enableSystem={false}  
+          themes={[
+            ...Object.values(ThemeFonts),
+            ...Object.values(ThemeModes),
+            ...Object.values(ThemeStyles),
+            ...Object.values(ThemeBaseColors),
+            ...Object.values(ThemePrimaryColors),
+            ...Object.values(ThemeBorderRadiuses),
+          ]}
+       
+        >
+          <RouterOutlet />
+        </ThemeProvider>
       </body>
     </QwikCityProvider>
   );

@@ -5,6 +5,7 @@ import Logo from "~/components/common/Logo";
 import ToggleTheme from "~/components/common/ToggleTheme";
 import ToggleMenu from "~/components/common/ToggleMenu";
 import IconChevronDown from "../icons/IconChevronDown";
+import Theme from "../theme";
 
 export default component$(() => {
   const store = useStore({
@@ -34,6 +35,7 @@ export default component$(() => {
         <div class="mr-auto rtl:mr-0 rtl:ml-auto flex justify-between">
           <a class="flex items-center" href={"/"}>
             <Logo />
+            
           </a>
           <div class="flex items-center md:hidden">
             <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block" />
