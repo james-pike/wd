@@ -53,7 +53,7 @@ export default component$((props: Props) => {
       <div class="relative max-w-4xl mx-auto px-5 lg:px-8">
 
         
-      <div class="max-w-3xl mx-auto lg:mt-24 bg-white/90 dark:bg-slate-900/95 rounded-lg pt-8 p-6">
+      <div class="max-w-3xl mx-auto lg:mt-24 bg-white/95 dark:bg-slate-900/95 rounded-lg pt-8 p-6">
       <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
       <form action="#" class="grid max-w-screen-md grid-cols-1 mx-auto gap-x-8 gap-y-6 pt-0 sm:grid-cols-2">
         <div>
