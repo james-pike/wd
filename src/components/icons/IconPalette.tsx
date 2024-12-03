@@ -3,7 +3,7 @@ interface ItemProps {
   }
   
   export default (props: ItemProps) => {
-    const { class: className } = props;
+    
     return (
    
       
