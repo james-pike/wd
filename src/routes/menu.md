@@ -2,10 +2,10 @@
 
 ## Pages
 
-- [Services](#)
-- [Porfolio](#)
-- [About us](#)
-- [Terms](/terms)
-- [Privacy](/privacy)
+- [About](/about)
+- [Services](/services)
+- [Pricing](/pricing)
 
-## [Blog](/blog)
+- [Contact](/contact)
+
+## [Webdev Blog](/blog)
