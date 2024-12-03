@@ -5,8 +5,10 @@ import { useContent } from "@builder.io/qwik-city";
 import ToggleTheme from "~/components/common/ToggleTheme";
 import ToggleMenu from "~/components/common/ToggleMenu";
 import IconChevronDown from "../icons/IconChevronDown";
-import Theme from "../ThemePicker";
+import ThemePicker from "../ThemePicker";
 import { Logo } from "../common/Logo";
+import TogglePicker from "../common/TogglePicker";
+
 
 
 export default component$(() => {
@@ -43,7 +45,7 @@ export default component$(() => {
           </a>
           <div class="flex items-center md:hidden">
             <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block" />
-            <Theme/>
+            <ThemePicker iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block" />
             <ToggleMenu />
           </div>
         </div>
@@ -87,7 +89,7 @@ export default component$(() => {
           <div class="items-center flex justify-between w-full md:w-auto">
             <div class="flex">
               <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block" />
-              <Theme/>
+              <ThemePicker/>
             </div>
             <span class="ml-4 rtl:ml-0 rtl:mr-4">
               <a

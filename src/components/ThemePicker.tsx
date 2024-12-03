@@ -21,10 +21,16 @@ import { useTheme } from '~/lib/provider';
 
 import { Modal } from '@qwik-ui/headless';
 import { Button, buttonVariants } from './button';
-import IconApps from './icons/IconApps';
 import IconPalette from './icons/IconPalette';
 
-export default component$<PropsOf<typeof Button>>(() => {
+
+interface ItemProps {
+  iconClass?: string;
+}
+
+export default component$((props: ItemProps) => {
+  const { iconClass } = props;
+
   const rootStore = useAppState();
 
   const { themeSig } = useTheme();

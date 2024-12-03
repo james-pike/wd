@@ -3,11 +3,13 @@ interface ItemProps {
   }
   
   export default (props: ItemProps) => {
-    
+    const { class: className } = props;
     return (
    
       
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+        <svg version="1.1" id="Layer_1" 
+        class={`icon icon-tabler ${className || "w-5 h-5"}`}
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
              viewBox="0 0 512 512" xml:space="preserve">
         <g>
             <rect x="398.515" y="366.845" style="fill:#D4145A;" width="95.01" height="95.01"/>
