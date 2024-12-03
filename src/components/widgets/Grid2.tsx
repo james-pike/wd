@@ -34,7 +34,7 @@ export default component$((props: Props) => {
   });
 
   return (
-<div class="relative bg-bgAccent overflow-hidden flex items-center justify-center py-6">
+<div class="relative bg-white/80 dark:bg-gray-900 overflow-hidden flex items-center justify-center py-6">
 <div class="grid-background absolute inset-0 p-2 -mt-16 grid grid-cols-6 gap-1 transform -skew-y-0 scale-100">
         {gridItemsStore.gridItems.map((item, index) => (
           <div
