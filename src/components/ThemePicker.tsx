@@ -1,4 +1,4 @@
-import { $, PropsOf, component$, useComputed$ } from '@builder.io/qwik';
+import { $, component$, useComputed$ } from '@builder.io/qwik';
 import {
   ThemeBaseColors,
   ThemeBorderRadiuses,
@@ -23,10 +23,6 @@ import { Modal } from '@qwik-ui/headless';
 import { Button, buttonVariants } from './button';
 import IconPalette from './icons/IconPalette';
 
-
-interface ItemProps {
-  iconClass?: string;
-}
 
 export default component$(() => {
 
