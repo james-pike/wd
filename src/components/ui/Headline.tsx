@@ -20,7 +20,7 @@ export const Headline = (props: Props) => {
       <div class={twMerge("mb-8 md:mx-auto md:mb-12 text-center", containerClass)}>
         {highlight && (
           <p
-            class="text-base text-primary-600 dark:text-purple-200 font-bold tracking-wide uppercase"
+            class="text-base text-primary dark:text-purple-200 font-bold tracking-wide uppercase"
             dangerouslySetInnerHTML={highlight}
           />
         )}
@@ -31,7 +31,7 @@ export const Headline = (props: Props) => {
           />
         )}
 
-        {subtitle && <p class={twMerge("mt-4 text-muted", subtitleClass)} dangerouslySetInnerHTML={subtitle} />}
+        {subtitle && <p class={twMerge("mt-4 text-black ", subtitleClass)} dangerouslySetInnerHTML={subtitle} />}
       </div>
     ) : null;
 };
