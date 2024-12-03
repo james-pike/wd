@@ -21,6 +21,8 @@ import { useTheme } from '~/lib/provider';
 
 import { Modal } from '@qwik-ui/headless';
 import { Button, buttonVariants } from './button';
+import IconApps from './icons/IconApps';
+import IconPalette from './icons/IconPalette';
 
 export default component$<PropsOf<typeof Button>>(() => {
   const rootStore = useAppState();
@@ -78,7 +80,7 @@ export default component$<PropsOf<typeof Button>>(() => {
           'flex sm:mr-2 sm:h-10',
         )}
       >
-        {/* <LuSlidersHorizontal class={cn('h-4 w-4 sm:mr-2')} /> */}
+        <IconPalette/>
         <span class={cn('hidden', 'sm:block')}>Make it yours</span>
       </Modal.Trigger>
       <Modal.Panel >
