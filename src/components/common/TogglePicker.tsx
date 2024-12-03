@@ -1,5 +1,4 @@
 import { component$ } from "@builder.io/qwik";
-import IconMoon from "~/components/icons/IconMoon"
 import IconPalette from "../icons/IconPalette";
 import ThemePicker from "../ThemePicker";
 

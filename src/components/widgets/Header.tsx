@@ -7,7 +7,6 @@ import ToggleMenu from "~/components/common/ToggleMenu";
 import IconChevronDown from "../icons/IconChevronDown";
 import ThemePicker from "../ThemePicker";
 import { Logo } from "../common/Logo";
-import TogglePicker from "../common/TogglePicker";
 
 
 
