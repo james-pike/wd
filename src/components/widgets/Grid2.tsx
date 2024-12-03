@@ -58,7 +58,7 @@ export default component$((props: Props) => {
       <form action="#" class="grid max-w-screen-md grid-cols-1 mx-auto gap-x-8 gap-y-6 pt-0 sm:grid-cols-2">
         <div>
           <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-            Name
+            Names
           </label>
           <input type="text" id="first-name"
             class="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
