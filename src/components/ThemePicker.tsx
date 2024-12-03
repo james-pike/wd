@@ -28,8 +28,8 @@ interface ItemProps {
   iconClass?: string;
 }
 
-export default component$((props: ItemProps) => {
-  const { iconClass } = props;
+export default component$(() => {
+
 
   const rootStore = useAppState();
 
