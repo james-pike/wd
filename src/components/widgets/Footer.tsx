@@ -14,8 +14,8 @@ export default component$(() => {
         { title: "Features", href: "#" },
         { title: "Security", href: "#" },
         { title: "Team", href: "#" },
-        { title: "Enterprise", href: "#" },
-        { title: "Customer stories", href: "#" },
+      
+        { title: "Customer story", href: "#" },
         { title: "Pricing", href: "#" },
         { title: "Resources", href: "#" },
       ],
