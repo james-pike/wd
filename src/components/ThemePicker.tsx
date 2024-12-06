@@ -1,10 +1,9 @@
-import { $, component$, useComputed$ } from '@builder.io/qwik';
+import { $, component$, useComputed$, useStore, useVisibleTask$ } from '@builder.io/qwik';
 import {
   ThemeBaseColors,
   ThemeBorderRadiuses,
   ThemeConfig,
   ThemeFonts,
-  ThemeModes,
   ThemePrimaryColors,
   ThemeStyles,
   cn,
@@ -26,7 +25,15 @@ import IconPalette from './icons/IconPalette';
 
 export default component$(() => {
 
+  const store = useStore({
+    theme: 'dark', // Default to 'light'
+  });
 
+  useVisibleTask$(() => {
+    store.theme = document.documentElement.classList.contains('dark')
+      ? 'dark'
+      : 'light';
+  });
   const rootStore = useAppState();
 
   const { themeSig } = useTheme();
@@ -35,7 +42,7 @@ export default component$(() => {
     if (!themeSig.value || themeSig.value === 'light') {
       return {
         font: ThemeFonts.SANS,
-        mode: ThemeModes.LIGHT,
+        mode: store.theme,
         style: ThemeStyles.SIMPLE,
         baseColor: ThemeBaseColors.SLATE,
         primaryColor: ThemePrimaryColors.CYAN600,
@@ -46,7 +53,7 @@ export default component$(() => {
     if (themeSig.value === 'dark') {
       return {
         font: ThemeFonts.SANS,
-        mode: ThemeModes.DARK,
+        mode: store.theme,
         style: ThemeStyles.SIMPLE,
         baseColor: ThemeBaseColors.SLATE,
         primaryColor: ThemePrimaryColors.CYAN600,
@@ -87,7 +94,7 @@ export default component$(() => {
       </Modal.Trigger>
       <Modal.Panel >
         <header class="flex w-full">
-          <h2 class="justify-self-start text-lg font-bold">{themeComputedObjectSig.value.primaryColor}</h2>
+          <h2 class="justify-self-start text-lg font-bold">{themeComputedObjectSig.value.primaryColor} {themeComputedObjectSig.value.mode} </h2>
         </header>
         <div class="mb-2 mt-8 py-4">
           <label class="mb-1 block font-medium">Preset</label>
