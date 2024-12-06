@@ -484,7 +484,7 @@ export default component$(() => {
               onClick$={async () => {
                 themeComputedObjectSig.value.mode =
                   themeComputedObjectSig.value.mode?.includes('light') ? 'dark' : 'light';
-
+                  store.theme = themeComputedObjectSig.value.mode;
                 themeSig.value = await themeStoreToThemeClasses$();
               }}
             />
