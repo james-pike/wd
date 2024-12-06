@@ -1,13 +1,13 @@
-const { join } = require('path');
-const plugin = require('tailwindcss/plugin');
+import { join } from 'path';
+import tailwindAnimate from 'tailwindcss-animate';
+import plugin from 'tailwindcss/plugin';
 
 /** @type {import('tailwindcss').Config} */
-
-module.exports = {
-  content: [join(__dirname, 'src/**/*.{js,ts,jsx,tsx,mdx}')],
+export default {
+  content: [join(process.cwd(), 'src/**/*.{js,ts,jsx,tsx,mdx}')],
   plugins: [
-    require('tailwindcss-animate'),
-    plugin(function ({ addUtilities }) {
+    tailwindAnimate,
+    plugin(({ addUtilities }) => {
       addUtilities({
         '.press': {
           transform: 'var(--transform-press)',
