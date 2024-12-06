@@ -1,4 +1,4 @@
-import { component$, useStore, useVisibleTask$ } from "@builder.io/qwik";
+import { $, component$, useStore, useVisibleTask$ } from "@builder.io/qwik";
 
 export default component$(() => {
   const store = useStore({
@@ -15,12 +15,15 @@ export default component$(() => {
   });
 
   // Update the primary color dynamically and store it in localStorage
-  function updatePrimaryColor(color: string) {
-    document.documentElement.style.setProperty('--color-primary', color);
-    store.primaryColor = color;
-    localStorage.setItem('primaryColor', color); // Save to localStorage
-    console.log(color)
-  }
+  const updatePrimaryColor = $(
+    // Update the primary color dynamically and store it in localStorage
+    function updatePrimaryColor(color: string) {
+      document.documentElement.style.setProperty('--color-primary', color);
+      store.primaryColor = color;
+      localStorage.setItem('primaryColor', color); // Save to localStorage
+      console.log(color)
+    }
+  );
 
   return (
     <div>
