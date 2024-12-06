@@ -19,21 +19,68 @@ import IconSun from "../icons/IconSun";
 
 
 export default component$(() => {
-  const store = useStore({
-    isScrolling: false,
-  });
+
 
   const { menu } = useContent();
 
+  const store = useStore({
+    theme: (typeof window !== "undefined" && window.localStorage.theme) || "light",
+    primaryColor: (typeof window !== "undefined" && window.localStorage.primaryColor) || ThemePrimaryColors.CYAN600,
+    isScrolling: false,
+  });
+
+  // Computed theme configuration based on the stored theme and primaryColor
+  const themeComputedObjectSig = useComputed$((): ThemeConfig => {
+    if (!store.theme || store.theme === 'light') {
+      return {
+        font: ThemeFonts.SANS,
+        mode: store.theme,
+        style: ThemeStyles.SIMPLE,
+        baseColor: ThemeBaseColors.SLATE,
+        primaryColor: store.primaryColor, // Use the stored primary color
+        borderRadius: ThemeBorderRadiuses['BORDER-RADIUS-0'],
+      };
+    }
+
+    if (store.theme === 'dark') {
+      return {
+        font: ThemeFonts.SANS,
+        mode: store.theme,
+        style: ThemeStyles.SIMPLE,
+        baseColor: ThemeBaseColors.SLATE,
+        primaryColor: store.primaryColor, // Use the stored primary color
+        borderRadius: ThemeBorderRadiuses['BORDER-RADIUS-0'],
+      };
+    }
+
+    // Fallback return in case the theme value is not recognized
+    const themeArray = Array.isArray(themeSig.value)
+    ? themeSig.value
+    : themeSig.value.split(' ');
+  return {
+    font: themeArray[0],
+    mode: themeArray[1],
+    style: themeArray[2],
+    baseColor: themeArray[3],
+    primaryColor: themeArray[4],
+    borderRadius: themeArray[5],
+  };
+  });
+
+ 
+
+//   // Function to change the primary color and persist it
+//   const changePrimaryColor = $((newColor: string)=>{
+//     store.primaryColor = newColor;
+//     window.localStorage.setItem('primaryColor', newColor); // Save the selected primary color to localStorage
+// });
 
 
  
-  const themeStore = useStore({
-    theme: 'dark', // Default to 'light'
-  });
+  
 
   useVisibleTask$(() => {
-    themeStore.theme = document.documentElement.classList.contains('dark')
+    store.theme = document.documentElement.classList.contains('dark')
       ? 'dark'
       : 'light';
   });
@@ -41,49 +88,16 @@ export default component$(() => {
 
   const { themeSig } = useTheme();
 
-  const themeComputedObjectSig = useComputed$((): ThemeConfig => {
-    if (!themeSig.value || themeSig.value === 'light') {
-      return {
-        font: ThemeFonts.SANS,
-        mode: themeStore.theme,
-        style: ThemeStyles.SIMPLE,
-        baseColor: ThemeBaseColors.SLATE,
-        primaryColor: ThemePrimaryColors.CYAN600,
-        borderRadius: ThemeBorderRadiuses['BORDER-RADIUS-0'],
-      };
-    }
 
-    if (themeSig.value === 'dark') {
-      return {
-        font: ThemeFonts.SANS,
-        mode: themeStore.theme,
-        style: ThemeStyles.SIMPLE,
-        baseColor: ThemeBaseColors.SLATE,
-        primaryColor: ThemePrimaryColors.CYAN600,
-        borderRadius: ThemeBorderRadiuses['BORDER-RADIUS-0'],
-      };
-    }
-
-    const themeArray = Array.isArray(themeSig.value)
-      ? themeSig.value
-      : themeSig.value.split(' ');
-    return {
-      font: themeArray[0],
-      mode: themeArray[1],
-      style: themeArray[2],
-      baseColor: themeArray[3],
-      primaryColor: themeArray[4],
-      borderRadius: themeArray[5],
-    };
-  });
-
+ 
   
 
   const themeStoreToThemeClasses$ = $((): string => {
     const { font, mode, style, baseColor, primaryColor, borderRadius } =
       themeComputedObjectSig.value;
     return [font, mode, style, baseColor, primaryColor, borderRadius].join(' ');
-  });
+  }
+);
 
   return (
     <header
@@ -119,7 +133,7 @@ export default component$(() => {
         themeSig.value = await themeStoreToThemeClasses$();
       }}
     >
-      {themeStore.theme == "dark" ? (
+      {store.theme == "dark" ? (
         <IconMoon  />
       ) : (
         <IconSun  />
