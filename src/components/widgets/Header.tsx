@@ -20,7 +20,7 @@ import IconSun from "../icons/IconSun";
 
 export default component$(() => {
 
-
+  const { themeSig } = useTheme();
   const { menu } = useContent();
 
   const store = useStore({
@@ -54,9 +54,15 @@ export default component$(() => {
     }
 
     // Fallback return in case the theme value is not recognized
-    const themeArray = Array.isArray(themeSig.value)
-    ? themeSig.value
-    : themeSig.value.split(' ');
+    let themeArray: string[] = []; // Default value
+
+    if (themeSig?.value) {
+      themeArray = Array.isArray(themeSig.value)
+        ? themeSig.value
+        : themeSig.value.split(' ');
+    }
+
+
   return {
     font: themeArray[0],
     mode: themeArray[1],
@@ -83,10 +89,13 @@ export default component$(() => {
     store.theme = document.documentElement.classList.contains('dark')
       ? 'dark'
       : 'light';
+
+      const storedPrimaryColor = localStorage.getItem('primaryColor');
+  store.primaryColor = storedPrimaryColor || 'defaultColor'; 
   });
   const rootStore = useAppState();
 
-  const { themeSig } = useTheme();
+  
 
 
  
@@ -533,19 +542,7 @@ export default component$(() => {
               })}
             </div>
           </div>
-          <div class="mt-8">
-            Dark Mode{' '}
-            <input
-              type="checkbox"
-              checked={themeComputedObjectSig.value.mode === 'dark'}
-              onClick$={async () => {
-                themeComputedObjectSig.value.mode =
-                  themeComputedObjectSig.value.mode?.includes('light') ? 'dark' : 'light';
-
-                themeSig.value = await themeStoreToThemeClasses$();
-              }}
-            />
-          </div>
+      
         </div>
 
         <footer class=" flex w-full justify-between gap-4">
