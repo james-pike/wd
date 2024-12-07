@@ -5,9 +5,9 @@ import GridTabs from "~/components/widgets/GridTabs";
 export default component$(() => {
   return (
     <>
-      <GridTabs highlight="Pricing"
-        title="Flexible Pricing Options"
-        subtitle="Choose a one-time payment or pay it off over a longer period."
+      <GridTabs highlight="Get In Touch"
+        title="Contact Us For A Consultation"
+        subtitle="We're glad to learn about your business and discuss possible options."
          items={[ {
 
           },
