@@ -62,7 +62,7 @@ export default component$((props: Props) => {
           </label>
           <input type="text" id="first-name"
             class="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-            placeholder="James" required/>
+            placeholder="James Pike" required/>
         </div>
 
         {/* <div>
@@ -172,10 +172,10 @@ export default component$((props: Props) => {
           </label>
           <textarea id="message" rows={2}
             class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-            placeholder="Hey, I need a website for my business, it's.."></textarea>
+            placeholder="I need a website for my business, it's.."></textarea>
         </div>
 
-        <div class="sm:col-span-2">
+        <div class="sm:col-span-2"> 
           <div class="flex items-start">
             <input type="checkbox" id="terms" value=""
               class="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 rounded focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
