@@ -7,7 +7,7 @@ export default component$(() => {
     <>
       <GridTabs highlight="Pricing"
         title="Flexible Pricing Options"
-        subtitle="Etchy Sketchy doesn't need tabs, but another site might. "
+        subtitle="Choose a one-time payment or pay it off over 24 months."
          items={[ {
 
           },
