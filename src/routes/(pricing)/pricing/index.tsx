@@ -5,9 +5,9 @@ import GridTabs from "~/components/widgets/GridTabs";
 export default component$(() => {
   return (
     <>
-      <GridTabs highlight="Features"
-        title="What you get with Qwind"
-        subtitle="Sed ut perspiciatios unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
+      <GridTabs highlight="Pricing"
+        title="Flexible Pricing Options"
+        subtitle="Etchy Sketchy doesn't need tabs, but another site might. "
          items={[ {
 
           },
