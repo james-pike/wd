@@ -49,9 +49,9 @@ export const ColorPickerComponent = component$(() => {
    * Update the `--primary` CSS variable with the chosen color.
    * @param {string} color - HEX color value.
    */
-  const updatePrimaryColor = $((color: string) => {
+  const updatePrimaryColor = $(async (color: string) => {
     const hslColor = hexToHsl(color);
-    document.documentElement.style.setProperty('--primary', hslColor);
+    document.documentElement.style.setProperty('--primary', await hslColor);
   });
 
   /**
