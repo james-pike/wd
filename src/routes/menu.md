@@ -1,6 +1,6 @@
 # Menu
 
-## Pages
+
 
 - [About](/about)
 - [Services](/services)
@@ -8,4 +8,4 @@
 
 - [Contact](/contact)
 
-## [Webdev Blog](/blog)
+## [Blog](/blog)

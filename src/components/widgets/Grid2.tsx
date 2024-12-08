@@ -50,7 +50,7 @@ export default component$((props: Props) => {
 
  
 
-      <div class="relative max-w-4xl mx-auto px-5 lg:px-8">
+      <div class="relative max-w-4xl mx-auto px-4 lg:px-8">
 
         
       <div class="max-w-3xl mx-auto lg:mt-24 bg-white/95 dark:bg-slate-900/95 rounded-lg pt-8 p-6">
