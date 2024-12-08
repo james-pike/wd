@@ -17,7 +17,6 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 import { SITE } from "~/config.mjs";
 import Grid2 from "~/components/widgets/Grid2";
-import Test2 from "~/components/Test2";
 
 export default component$(() => {
   return (
