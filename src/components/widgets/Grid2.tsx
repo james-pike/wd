@@ -34,8 +34,8 @@ export default component$((props: Props) => {
   });
 
   return (
-<div class="relative bg-white/80 dark:bg-gray-900 overflow-hidden flex items-center justify-center pt-4 pb-6">
-<div class="grid-background absolute inset-0 p-1s -mt-16 grid grid-cols-6 gap-1 transform -skew-y-0 scale-100">
+<div class="relative bg-white/80 dark:bg-gray-900 overflow-hidden flex items-center justify-center pt-2 pb-3">
+<div class="grid-background absolute inset-0 p-1 -mt-16 grid grid-cols-6 gap-1 transform -skew-y-0 scale-100">
         {gridItemsStore.gridItems.map((item, index) => (
           <div
             key={index}
@@ -50,7 +50,7 @@ export default component$((props: Props) => {
 
  
 
-      <div class="relative max-w-4xl mx-auto px-4 lg:px-8">
+      <div class="relative max-w-4xl mx-auto px-3 lg:px-8">
 
         
       <div class="max-w-3xl mx-auto lg:mt-24 bg-white/95 dark:bg-slate-900/95 rounded-lg pt-8 p-6">
