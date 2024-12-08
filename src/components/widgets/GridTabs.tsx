@@ -64,8 +64,8 @@ export default component$((props: Props) => {
 
       <Tabs.Root class="max-w-[400px]">
       <Tabs.List class="grid w-full grid-cols-2">
-        <Tabs.Tab>Account</Tabs.Tab>
-        <Tabs.Tab>Password</Tabs.Tab>
+        <Tabs.Tab>Custom Site - $5000</Tabs.Tab>
+        <Tabs.Tab>Monthly Plan - $250</Tabs.Tab>
       </Tabs.List>
       <Tabs.Panel>
         <Card.Root>

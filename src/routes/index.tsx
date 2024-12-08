@@ -17,6 +17,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 import { SITE } from "~/config.mjs";
 import Grid2 from "~/components/widgets/Grid2";
+import Footer from "~/components/widgets/Footer";
 
 export default component$(() => {
   return (
@@ -61,6 +62,8 @@ export default component$(() => {
           },
         ]}
       />
+
+      <Footer/>
 
       
     </>
