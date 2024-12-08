@@ -1,17 +1,17 @@
-import { component$, useStore, useVisibleTask$ } from '@builder.io/qwik';
+import { $, component$, useStore, useVisibleTask$ } from '@builder.io/qwik';
 
 export const ColorPickerComponent = component$(() => {
   // Store for managing the current color state
   const state = useStore({ color: '#00bcd4' });
 
-  useVisibleTask$(() => {
+  useVisibleTask$(async () => {
     // Get the current CSS primary color and convert it to HEX
     const computedStyle = getComputedStyle(document.documentElement);
     const primaryColorHsl = computedStyle.getPropertyValue('--primary').trim();
 
     if (primaryColorHsl) {
       try {
-        state.color = hslToHex(primaryColorHsl); // Update the state color to match the CSS variable
+        state.color = await hslToHex(primaryColorHsl); // Update the state color to match the CSS variable
       } catch (error) {
         console.error('Failed to parse primary color from CSS:', error);
       }
@@ -49,17 +49,17 @@ export const ColorPickerComponent = component$(() => {
    * Update the `--primary` CSS variable with the chosen color.
    * @param {string} color - HEX color value.
    */
-  const updatePrimaryColor = (color: string) => {
+  const updatePrimaryColor = $((color: string) => {
     const hslColor = hexToHsl(color);
     document.documentElement.style.setProperty('--primary', hslColor);
-  };
+  });
 
   /**
    * Convert HEX to HSL
    * @param {string} hex - HEX color value
    * @returns {string} - HSL string (e.g., "191.6 91.4% 36.5%")
    */
-  const hexToHsl = (hex: string): string => {
+  const hexToHsl = $((hex: string): string => {
     if (!/^#?[0-9A-Fa-f]{6}$/.test(hex)) {
       throw new Error(`Invalid HEX color format: ${hex}`);
     }
@@ -88,14 +88,14 @@ export const ColorPickerComponent = component$(() => {
     }
 
     return `${Math.round(h * 360)} ${Math.round(s * 100)}% ${Math.round(l * 100)}%`;
-  };
+  });
 
   /**
    * Convert HSL to HEX
    * @param {string} hsl - HSL string (e.g., "191.6 91.4% 36.5%")
    * @returns {string} - HEX color value (e.g., "#00bcd4")
    */
-  const hslToHex = (hsl: string): string => {
+  const hslToHex = $((hsl: string): string => {
     const hslParts = hsl.match(/([\d.]+)/g);
     if (!hslParts || hslParts.length < 3) {
       throw new Error(`Invalid HSL color format: ${hsl}`);
@@ -124,7 +124,7 @@ export const ColorPickerComponent = component$(() => {
 
     const toHex = (x: number) => Math.round(x * 255).toString(16).padStart(2, '0');
     return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
-  };
+  });
 
   return (
     <div>
