@@ -43,7 +43,7 @@ export default component$(() => {
                 </svg>
                 <blockquote class="text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
                   <p>
-                  Sint veniam minim et ea. Commodo amet fugiat excepteur sunt qui ea elit cupidatat ullamco consectetur ipsum elit consequat. Elit sunt proident ea nulla ad nulla dolore ad pariatur tempor non. 
+                  Sint veniam minim et ea. Commodo amet fugiat excepteur sunt qui ea elit cupidatat ullamco consectetur ipsum elit consequat!
                   </p>
                 </blockquote>
               </div>
@@ -101,7 +101,7 @@ export default component$(() => {
                 </svg>
                 <blockquote class="text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
                   <p>
-                     Elit sunt proident ea nulla ad nulla dolore ad pariatur tempor non. Sint veniam minim et ea. Commodo amet fugiat excepteur sunt qui ea elit cupidatat ullamco consectetur ipsum elit consequat.
+                     Elit sunt proident ea nulla ad nulla dolore ad pariatur tempor non. Sint veniam minim et ea commodo amet fugiat excepteur!
                   </p>
                 </blockquote>
               </div>
@@ -159,7 +159,7 @@ export default component$(() => {
                 </svg>
                 <blockquote class="text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
                   <p>
-                    Commodo amet fugiat excepteur sunt qui ea elit cupidatat ullamco consectetur ipsum elit consequat. Elit sunt proident ea nulla ad nulla dolore ad pariatur tempor non. Sint veniam minim et ea.
+                    Commodo amet fugiat excepteur sunt qui ea elit cupidatat ullamco consectetur ipsum elit consequate elit sunt proident!
                   </p>
                 </blockquote>
               </div>
