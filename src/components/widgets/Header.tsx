@@ -15,6 +15,7 @@ import { Button, buttonVariants } from "../button";
 import IconPalette from "../icons/IconPalette";
 import IconMoon from "../icons/IconMoon";
 import IconSun from "../icons/IconSun";
+import { ColorPickerComponent } from "./ColorPicker";
 
 
 
@@ -22,6 +23,8 @@ export default component$(() => {
 
   const { themeSig } = useTheme();
   const { menu } = useContent();
+
+  const state = useStore({ color: '#00bcd4' });
 
   const store = useStore({
     theme: (typeof window !== "undefined" && window.localStorage.theme) || "light",
@@ -129,6 +132,7 @@ export default component$(() => {
         <div class="mr-auto rtl:mr-0 rtl:ml-auto flex justify-between">
           <a class="flex items-center" href={"/"}>
             <Logo />
+       <ColorPickerComponent/>
            
           </a>
           <div class="flex items-center md:hidden">
