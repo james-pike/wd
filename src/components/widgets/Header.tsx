@@ -24,7 +24,6 @@ export default component$(() => {
   const { themeSig } = useTheme();
   const { menu } = useContent();
 
-  const state = useStore({ color: '#00bcd4' });
 
   const store = useStore({
     theme: (typeof window !== "undefined" && window.localStorage.theme) || "light",
