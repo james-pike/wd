@@ -17,7 +17,6 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 import { SITE } from "~/config.mjs";
 import Grid2 from "~/components/widgets/Grid2";
-import TestimonialCarousel from "~/components/widgets/TestimonialCarousel";
 
 export default component$(() => {
   return (
@@ -63,7 +62,6 @@ export default component$(() => {
         ]}
       />
 
-      <TestimonialCarousel/>
       
     </>
   );

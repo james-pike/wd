@@ -3,6 +3,8 @@ import { Carousel } from 'flowbite-qwik';
 
 export default component$(() => {
   return (
+    <div class="p-4 rounded-lg bg-gray-100 shadow-md">
+
     <Carousel class="!h-96" pauseOnHover>
             <Carousel.Slide>
         <section
@@ -177,7 +179,9 @@ export default component$(() => {
             </figure>
           </div>
         </section>
+        
       </Carousel.Slide>
     </Carousel>
+    </div>
   );
 });

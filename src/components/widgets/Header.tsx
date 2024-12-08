@@ -518,7 +518,7 @@ export default component$(() => {
               })}
             </div>
           </div>
-
+{/* 
           <div>
             <label class="mb-1 mt-8 block font-medium">Radius</label>
             <div class="flex h-12 space-x-3">
@@ -544,7 +544,7 @@ export default component$(() => {
                 );
               })}
             </div>
-          </div>
+          </div> */}
       
         </div>
 

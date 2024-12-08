@@ -128,8 +128,17 @@ export const ColorPickerComponent = component$(() => {
 
   return (
     <div>
-      <label for="colorPicker">Choose a color:</label>
-      <input id="colorPicker" type="color" />
+     <input
+  id="colorPicker"
+  type="color"
+  onInput$={(event) => {
+    const target = event.target as HTMLInputElement | null;
+    if (target) {
+      const color = target.value;
+      console.log(`Selected color: ${color}`);
+    }
+  }}
+/>
     </div>
   );
 });
