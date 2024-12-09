@@ -116,7 +116,7 @@ export default component$(() => {
       class={`sticky top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0 transition-[opacity] ease-in-out ${
         store.isScrolling
           ? " md:bg-white/90 md:backdrop-blur-sm dark:md:bg-slate-900/90 bg-white/50 dark:bg-slate-900"
-          : "dark:bg-slate-900 bg-white/80"
+          : "dark:bg-slate-900 bg-white/60"
       }`}
       window:onScroll$={() => {
         if (!store.isScrolling && window.scrollY >= 10) {
