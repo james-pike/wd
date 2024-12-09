@@ -2,9 +2,7 @@ import { component$, useStore } from '@builder.io/qwik';
 import { Headline } from '../ui/Headline';
 import { Tabs } from '../Tabs';
 import { Card } from '../Card';
-import { Label } from '../Label';
-import { Input } from '../Input';
-import { Button } from '../button';
+
 
 interface Item {
     title?: string;
