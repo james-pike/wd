@@ -1,6 +1,5 @@
 import { component$, useStore } from '@builder.io/qwik';
 import { Headline } from '../ui/Headline';
-import TestimonialCarousel from './TestimonialCarousel';
 
 interface Item {
     title?: string;
