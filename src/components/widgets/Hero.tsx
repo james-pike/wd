@@ -4,7 +4,7 @@ export default component$(() => {
   return (
     <section class="relative md:-mt-[76px] not-prose  bg-white/90 dark:bg-gray-900/90">
       <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-10">
+      <div class="relative max-w-7xl mx-0 px-4 sm:px-10">
         <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
         <div class="pt-8 md:py-20 lg:py-0 lg:flex lg:items-center lg:h-screen lg:gap-8">
           <div class="basis-1/2 text-center lg:text-left pb-10 md:pb-16 mx-auto">
