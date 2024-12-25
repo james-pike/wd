@@ -25,7 +25,7 @@ function getRandomInt(min: number, max: number): number {
 }
 
 export default component$((props: Props) => {
-    const { title = "", subtitle = "", highlight = "", classes = {} } = props;
+  const { title = "", subtitle = "", highlight = "", classes = {} } = props;
   const gridItemsStore = useStore({
     gridItems: new Array(30).fill(null).map(() => ({
       animationDelay: `${getRandomInt(0, 5)}s`,
