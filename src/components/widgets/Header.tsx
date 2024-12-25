@@ -1,7 +1,6 @@
 import { $, component$, useComputed$, useStore, useVisibleTask$ } from "@builder.io/qwik";
 import { useContent } from "@builder.io/qwik-city";
 
-
 import ToggleMenu from "~/components/common/ToggleMenu";
 import IconChevronDown from "../icons/IconChevronDown";
 import ThemePicker from "../ThemePicker";
