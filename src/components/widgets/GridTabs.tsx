@@ -37,19 +37,8 @@ export default component$((props: Props) => {
   });
 
   return (
-<div class="relative bg-white/80 dark:bg-gray-900 overflow-hidden flex items-center justify-center pt-2 pb-3">
-<div class="grid-background absolute inset-0 p-1 -mt-16 grid grid-cols-6 gap-1 transform -skew-y-0 scale-100">
-        {gridItemsStore.gridItems.map((item, index) => (
-          <div
-            key={index}
-            class="bg-primary rounded animate-pulse"
-            style={{
-              animationDelay: item.animationDelay,
-              animationDuration: item.animationDuration,
-            }}
-          />
-        ))}
-      </div>
+<div class="relative bg-white/80 dark:bg-gray-900 overflow-hidden flex items-center justify-center mx-2 my-2 pt-2 pb-3">
+
 
  
 
