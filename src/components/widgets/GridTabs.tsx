@@ -1,4 +1,4 @@
-import { component$, useStore } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 import { Headline } from '../ui/Headline';
 import { Tabs } from '../Tabs';
 import { Card } from '../Card';
@@ -21,20 +21,11 @@ interface Item {
     classes?: any;
   }
 
-function getRandomInt(min: number, max: number): number {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+
 
 export default component$((props: Props) => {
     const { title = "", subtitle = "", highlight = "", classes = {} } = props;
-  const gridItemsStore = useStore({
-    gridItems: new Array(30).fill(null).map(() => ({
-      animationDelay: `${getRandomInt(0, 5)}s`,
-      animationDuration: `${getRandomInt(3, 6)}s`,
-    })),
-  });
+ 
 
   return (
 <div class="relative bg-white/80 dark:bg-gray-900 overflow-hidden flex items-center justify-center mx-2 my-2 pt-2 pb-3">
