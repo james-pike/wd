@@ -49,8 +49,8 @@ export default component$(() => {
   ];
 
   return (
-    <footer class="py-3 bg-gradient-to-r from-bgAccent via-secondary to-bgLight px-3">
-      <div class="max-w-7xl mx-auto px-4 bg-bgAccent dark:bg-gray-900 rounded-lg shadow-lg">
+    <footer class="py-2 px-2">
+      <div class="max-w-7xl mx-auto px-4  dark:bg-gray-900 rounded-lg shadow-lg">
         <div class="grid grid-cols-12 gap-4 gap-y-4 sm:gap-8 pt-6 pb-2 md:py-12">
           <div class="col-span-12 lg:col-span-4 pr-8">
             <div class="mb-4">
