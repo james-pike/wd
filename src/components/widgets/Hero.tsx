@@ -13,7 +13,7 @@ export default component$(() => {
               <span class="text-sky-500">The Kaspian Frog</span>
             </h1>
             <div class="max-w-3xl mx-auto lg:max-w-none">
-              <p class="text-xl text-muted mb-6 dark:text-slate-300">
+              <p class="text-xl mb-6 dark:text-slate-300">
                 Join the fun with <span class="font-semibold">Froppy</span>—the hottest memecoin on the Kaspa chain. Fast, fun, and ready for the next big trend.
               </p>
 
