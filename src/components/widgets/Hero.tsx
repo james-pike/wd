@@ -24,17 +24,17 @@ export default component$(() => {
         </a>
     </div>
     <div class="flex w-full">
-        <button class="btn w-full bg-red-200 rounded-xl dark:bg-red-400">
+        <button class="btn w-full bg-red-200  dark:bg-red-400">
             Join Telegram
         </button>
     </div>
     <div class="flex w-full">
-        <button class="btn w-full bg-green-200 rounded-xl dark:bg-green-400">
+        <button class="btn w-full bg-green-200 dark:bg-green-400">
             Share on X
         </button>
     </div>
     <div class="flex w-full">
-        <button class="btn w-full bg-yellow-200 rounded-xl dark:bg-yellow-400">
+        <button class="btn w-full bg-yellow-200 rounded-lg dark:bg-yellow-400">
             Partnerships
         </button>
     </div>
