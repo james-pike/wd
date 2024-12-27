@@ -28,7 +28,7 @@ export default component$((props: Props) => {
  
 
   return (
-<div class="relative bg-white/80 dark:bg-gray-900 overflow-hidden flex items-center justify-center mx-2 my-2 py-2">
+<div class="relative bg-white/80 dark:bg-gray-900/80 overflow-hidden flex items-center justify-center mx-2 my-2 py-2 border-radius-dot-25 rounded-lg">
 
 
  
@@ -36,7 +36,7 @@ export default component$((props: Props) => {
       <div class="relative max-w-4xl mx-auto px-2 lg:px-8">
 
         
-      <div class="max-w-3xl mx-auto lg:mt-24 bg-white/95 dark:bg-slate-900/95 rounded-lg pt-8 p-6">
+      <div class="max-w-3xl mx-auto lg:mt-24 bg-white/95 dark:bg-slate-900/95 rounded-lg pt-8 p-6 border-radius-dot-25">
       <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
 
 
