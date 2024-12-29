@@ -6,14 +6,12 @@ import IconChevronDown from "../icons/IconChevronDown";
 import ThemePicker from "../ThemePicker";
 import { Logo } from "../common/Logo";
 import { ThemeConfig, ThemeFonts, ThemeStyles, ThemeBaseColors, ThemePrimaryColors, ThemeBorderRadiuses, cn } from "@qwik-ui/utils";
-import { useAppState } from "~/_state/use-app-state";
 import { useTheme } from "~/lib/provider";
 import { Modal } from "@qwik-ui/headless";
 import { Button, buttonVariants } from "../button";
 import IconPalette from "../icons/IconPalette";
 import IconMoon from "../icons/IconMoon";
 import IconSun from "../icons/IconSun";
-import { ColorPickerComponent } from "./ColorPicker";
 
 
 
@@ -93,7 +91,6 @@ export default component$(() => {
       const storedPrimaryColor = localStorage.getItem('primaryColor');
   store.primaryColor = storedPrimaryColor || 'defaultColor'; 
   });
-  const rootStore = useAppState();
 
   
 
@@ -125,11 +122,14 @@ export default component$(() => {
       }}
     >
       <div class="absolute inset-0"></div>
-      <div class="relative text-default py-3 px-3 md:px-6 mx-auto w-full md:flex md:justify-between max-w-7xl">
+      <div class="border-radius-dot-25 rounded-t-xl mx-1.5 mt-1.5 bg-white/50">
+      <div class="relative text-default py-3 sm:py-2 px-3 md:px-6 mx-auto w-full md:flex md:justify-between max-w-7xl">
+        
         <div class="mr-auto rtl:mr-0 rtl:ml-auto flex justify-between">
           <a class="flex items-center" href={"/"}>
             <Logo />
-       <ColorPickerComponent/>
+       
+       {themeSig.value}
            
           </a>
           <div class="flex items-center md:hidden">
@@ -164,7 +164,7 @@ export default component$(() => {
           <h2 class="justify-self-start text-lg font-bold">{themeComputedObjectSig.value.primaryColor} {themeComputedObjectSig.value.mode} </h2>
         </header>
         <div class="mb-2 mt-8 py-4">
-          <label class="mb-1 block font-medium">Preset</label>
+          {/* <label class="mb-1 block font-medium">Preset</label>
           <select
             class="h-12 w-full rounded-base border bg-background p-2"
             value={themeComputedObjectSig.value.style}
@@ -187,9 +187,9 @@ export default component$(() => {
             {rootStore.featureFlags?.showNeumorphic && (
               <option value={'neumorphic'}>Neumorphic</option>
             )}
-          </select>
+          </select> */}
 
-          <label class="mb-1 mt-8 block font-medium">Base</label>
+          {/* <label class="mb-1 mt-8 block font-medium">Base</label>
           <div class="flex">
             {Object.values(ThemeBaseColors).map((baseColor: string) => {
               const isActive = themeComputedObjectSig.value.baseColor === baseColor;
@@ -222,7 +222,7 @@ export default component$(() => {
                 </Button>
               );
             })}
-          </div>
+          </div> */}
 
           <label class="mb-1 mt-8 block font-medium">Primary</label>
           <div class="flex justify-end">
@@ -504,7 +504,7 @@ export default component$(() => {
                           primaryColor === 'primary-blue-900' && 'bg-blue-900',
                           primaryColor === 'primary-indigo-900' && 'bg-indigo-900',
                           primaryColor === 'primary-violet-900' && 'bg-violet-900',
-                          primaryColor === 'primary-purple-900' && 'bg-purple-900',
+                          primaryColor === '#146efb' && 'bg-purple-900',
                           primaryColor === 'primary-fuchsia-900' && 'bg-fuchsia-900',
                           primaryColor === 'primary-pink-900' && 'bg-pink-900',
                           primaryColor === 'primary-rose-900' && 'bg-rose-900',
@@ -624,6 +624,7 @@ export default component$(() => {
             </span>
           </div>
         </div>
+      </div>
       </div>
     </header>
   );
