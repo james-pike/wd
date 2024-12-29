@@ -6,7 +6,6 @@ import IconChevronDown from "../icons/IconChevronDown";
 import ThemePicker from "../ThemePicker";
 import { Logo } from "../common/Logo";
 import { ThemeConfig, ThemeFonts, ThemeStyles, ThemeBaseColors, ThemePrimaryColors, ThemeBorderRadiuses, cn } from "@qwik-ui/utils";
-import { useAppState } from "~/_state/use-app-state";
 import { useTheme } from "~/lib/provider";
 import { Modal } from "@qwik-ui/headless";
 import { Button, buttonVariants } from "../button";
