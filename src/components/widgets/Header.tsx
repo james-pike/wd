@@ -6,6 +6,7 @@ import IconChevronDown from "../icons/IconChevronDown";
 import ThemePicker from "../ThemePicker";
 import { Logo } from "../common/Logo";
 import { ThemeConfig, ThemeFonts, ThemeStyles, ThemeBaseColors, ThemePrimaryColors, ThemeBorderRadiuses, cn } from "@qwik-ui/utils";
+import { useAppState } from "~/_state/use-app-state";
 import { useTheme } from "~/lib/provider";
 import { Modal } from "@qwik-ui/headless";
 import { Button, buttonVariants } from "../button";
@@ -111,7 +112,7 @@ export default component$(() => {
       class={`sticky top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0 transition-[opacity] ease-in-out ${
         store.isScrolling
           ? " md:bg-white/90 md:backdrop-blur-sm dark:md:bg-slate-900/90 bg-white/50 dark:bg-slate-900"
-          : "dark:bg-slate-900 bg-white/60"
+          : "dark:bg-slate-900 "
       }`}
       window:onScroll$={() => {
         if (!store.isScrolling && window.scrollY >= 10) {
@@ -122,14 +123,14 @@ export default component$(() => {
       }}
     >
       <div class="absolute inset-0"></div>
-      <div class="border-radius-dot-25 rounded-t-xl mx-1.5 mt-1.5 bg-white/50">
+      <div class="border-radius-dot-25 rounded-t-xl mt-1.5 mx-1.5 bg-white/70">
+
       <div class="relative text-default py-3 sm:py-2 px-3 md:px-6 mx-auto w-full md:flex md:justify-between max-w-7xl">
-        
         <div class="mr-auto rtl:mr-0 rtl:ml-auto flex justify-between">
           <a class="flex items-center" href={"/"}>
             <Logo />
        
-       {themeSig.value}
+ 
            
           </a>
           <div class="flex items-center md:hidden">
