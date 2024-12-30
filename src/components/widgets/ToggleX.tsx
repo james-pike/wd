@@ -17,7 +17,6 @@ import IconMenu from "../icons/IconMenu";
 export default component$(() => {
 
   const { themeSig } = useTheme();
-  const { menu } = useContent();
 
 
   const store = useStore({
