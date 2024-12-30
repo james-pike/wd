@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
-import GridTabs from "~/components/widgets/GridTabs";
+import GridTabs from "~/components/widgets/PriceTabs";
 
 export default component$(() => {
   return (

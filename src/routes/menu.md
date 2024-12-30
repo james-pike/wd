@@ -4,8 +4,8 @@
 
 - [Story](/story)
 - [Pricing](/pricing)
-- [Reviews](/clients)
-
+- [Clients](/clients)
+- [Reviews](/reviews)
 - [Contact](/contact)
 
 ## [Blog](/blog)
