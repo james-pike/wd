@@ -9,7 +9,6 @@ import { ThemeConfig, ThemeFonts, ThemeStyles, ThemeBaseColors, ThemePrimaryColo
 import { useTheme } from "~/lib/provider";
 import { Modal } from "@qwik-ui/headless";
 import { Button, buttonVariants } from "../button";
-import IconPalette from "../icons/IconPalette";
 import IconMoon from "../icons/IconMoon";
 import IconSun from "../icons/IconSun";
 import IconMenu from "../icons/IconMenu";
