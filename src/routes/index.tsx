@@ -1,9 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import AuditPopover from "~/components/widgets/AuditPopover";
-import FAQ from "~/components/widgets/FAQ";
+
 import Hero from "~/components/widgets/Hero";
-import TestimonialCarousel from "~/components/widgets/TestimonialCarousel";
 
 // import Features from "~/components/widgets/Features";
 // import Steps from "~/components/widgets/Steps";
@@ -27,11 +25,11 @@ export default component$(() => {
 
 <Hero />
 
-<TestimonialCarousel  />
+{/* <TestimonialCarousel  />
 <FAQ />
 <div class="px-40">
 <AuditPopover/>
-</div>
+</div> */}
 
       
     </>
