@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { Headline } from '../ui/Headline';
+import FAQ from './FAQ';
 
 
 
@@ -26,6 +27,7 @@ export default component$((props: Props) => {
   const { title = "", subtitle = "", highlight = "", classes = {} } = props;
 
   return (
+    <div>
     <div class="relative bg-white/80 dark:bg-gray-900/80 overflow-hidden flex items-center justify-center mx-1.5 my-1 border-radius-dot-25 rounded-lg">
       <div class="relative max-w-4xl mx-auto px-1.5 py-1.5 lg:px-8">
         <div class="max-w-3xl mx-auto lg:mt-24 bg-white/95 dark:bg-slate-900/95 rounded-lg pt-8 p-3 border-radius-dot-25">
@@ -177,6 +179,7 @@ export default component$((props: Props) => {
       </div>
       
     </div>
-    
+    <FAQ/>
+    </div>
   );
 });
