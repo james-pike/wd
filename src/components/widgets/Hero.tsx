@@ -5,7 +5,7 @@ export default component$(() => {
     <div class="relative bg-white/80 dark:bg-gray-900/80 overflow-hidden flex items-center justify-center mx-1.5 my-1 border-radius-dot-25 rounded-lg">
 
 
-    <section class="relative rounded-b-xl rounded-t-sm  md:-mt-[76px] not-prose mx-1.5 my-1 bg-white/90 dark:bg-gray-900/90 border-radius-dot-25">
+    <section class="relative rounded-b-xl rounded-t-sm md:-mt-[76px] not-prose mx-1 my-1 bg-white/90 dark:bg-gray-900/90 border-radius-dot-25">
         
       
         
