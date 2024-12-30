@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import Hero from "~/components/widgets/Hero";
+import TestimonialCarousel from "~/components/widgets/TestimonialCarousel";
 
 // import Features from "~/components/widgets/Features";
 // import Steps from "~/components/widgets/Steps";
@@ -23,6 +24,7 @@ export default component$(() => {
     <>
 
 <Hero />
+<TestimonialCarousel  />
      
 
       
