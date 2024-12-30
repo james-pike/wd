@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
   return (
-    <section class="relative rounded-b-xl md:-mt-[76px] not-prose mx-1.5 my-1.5 bg-white/95 dark:bg-gray-900/95 border-radius-dot-25">
+    <section class="relative rounded-b-xl rounded-t-sm  md:-mt-[76px] not-prose mx-1.5 my-1.5 bg-white/95 dark:bg-gray-900/95 border-radius-dot-25">
         <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
         
         <div class="relative max-w-7xl mx-auto px-4 sm:px-10 ">
