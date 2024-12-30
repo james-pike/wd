@@ -9,6 +9,7 @@ import { useTheme } from "~/lib/provider";
 
 import IconMoon from "../icons/IconMoon";
 import IconSun from "../icons/IconSun";
+import ToggleX from "./ToggleX";
 
 
 
@@ -146,7 +147,7 @@ export default component$(() => {
                   <IconSun />
                 )}
               </button>
-        
+                <ToggleX/>
               <ToggleMenu />
             </div>
           </div>
