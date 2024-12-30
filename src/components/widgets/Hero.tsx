@@ -20,23 +20,23 @@ export default component$(() => {
 
                 <div class=" sm:max-w-md m-auto grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:max-w-7xl">
                   <div class="flex w-full">
-                    <button class="btn w-full bg-blue-200  dark:bg-blue-400">
-                      Buy Froppy
+                    <button class="btn w-full bg-blue-200 py-1 dark:bg-blue-400">
+                      Design
                     </button>
                   </div>
                   <div class="flex w-full">
-                    <button class="btn w-full bg-red-200  dark:bg-red-400">
-                      Join Telegram
+                    <button class="btn w-full bg-red-200 py-1 dark:bg-red-400">
+                      Development
                     </button>
                   </div>
                   <div class="flex w-full">
                     <button class="btn w-full bg-green-200 dark:bg-green-400">
-                      Share on X
+                      Branding
                     </button>
                   </div>
                   <div class="flex w-full">
                     <button class="btn w-full bg-yellow-200 dark:bg-yellow-400">
-                      Partnerships
+                      Marketing
                     </button>
                   </div>
                 </div>
