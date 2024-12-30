@@ -24,9 +24,11 @@ import { SITE } from "~/config.mjs";
 export default component$(() => {
   return (
     <>
-
-<Hero />
+<div class="px-40">
 <AuditPopover/>
+</div>
+<Hero />
+
 <TestimonialCarousel  />
 <FAQ />
 
