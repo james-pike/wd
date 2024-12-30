@@ -78,11 +78,7 @@
   }
 }
 
-@property --gradient-angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
+
 
 :root {
   --clr-1: #052b2f;
