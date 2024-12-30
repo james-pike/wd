@@ -50,11 +50,11 @@ export default component$(() => {
 
   return (
     <footer class="py-2 px-2">
-      <div class="max-w-7xl mx-auto px-4 bg-white/90 dark:bg-gray-900 rounded-lg shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 bg-white/90 dark:bg-gray-900 shadow-lg border-radius-dot-25 rounded-lg card">
         <div class="grid grid-cols-12 gap-4 gap-y-4 sm:gap-8 pt-6 pb-2 md:py-12">
           <div class="col-span-12 lg:col-span-4 pr-8">
             <div class="mb-4">
-              <Link class="inline-block font-bold text-2xl" href={"/"}>
+              <Link class="inline-block font-bold dark:text-gray-50 text-2xl" href={"/"}>
                 Webdev.ca
               </Link>
             </div>

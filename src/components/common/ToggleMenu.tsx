@@ -15,7 +15,7 @@ export default component$((props: ItemProps) => {
   return (
     <button
       type="button"
-      class={`ml-1.5 text-white bg-primary  hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center transition ${
+      class={`ml-1.5 text-white bg-primary  hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-sm text-sm p-2.5 inline-flex items-center transition ${
         store.isExpanded ? "expanded" : ""
       }`}
       aria-label="Toggle Menu"
