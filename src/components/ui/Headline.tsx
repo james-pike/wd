@@ -17,7 +17,7 @@ export const Headline = (props: Props) => {
   } = classes;
 
   return (title || subtitle || highlight) ? (
-      <div class={twMerge("mb-8 md:mx-auto md:mb-12 text-center", containerClass)}>
+      <div class={twMerge("mb-6 md:mx-auto md:mb-12 text-center", containerClass)}>
         {highlight && (
           <p
             class="text-base text-primary font-bold tracking-wide uppercase"
