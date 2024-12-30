@@ -2,7 +2,7 @@
 
 
 
-- [Story](/story)
+- [About](/about)
 - [Pricing](/pricing)
 - [Clients](/clients)
 - [Reviews](/reviews)

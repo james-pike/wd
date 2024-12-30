@@ -3,7 +3,7 @@ import { Carousel } from 'flowbite-qwik';
 
 export default component$(() => {
   return (
-    <div class="p-3 rounded-lg bg-gray-100 shadow-md">
+    <div class="p-2 rounded-lg bg-gray-100 shadow-md">
 
     <Carousel class="!h-96" pauseOnHover>
             <Carousel.Slide>
