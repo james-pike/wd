@@ -3,16 +3,13 @@ import { useContent } from "@builder.io/qwik-city";
 
 import ToggleMenu from "~/components/common/ToggleMenu";
 import IconChevronDown from "../icons/IconChevronDown";
-import ThemePicker from "../ThemePicker";
 import { Logo } from "../common/Logo";
-import { ThemeConfig, ThemeFonts, ThemeStyles, ThemeBaseColors, ThemePrimaryColors, ThemeBorderRadiuses, cn } from "@qwik-ui/utils";
+import { ThemeConfig, ThemeFonts, ThemeStyles, ThemeBaseColors, ThemePrimaryColors, ThemeBorderRadiuses } from "@qwik-ui/utils";
 import { useTheme } from "~/lib/provider";
-import { Modal } from "@qwik-ui/headless";
-import { Button, buttonVariants } from "../button";
+
 import IconMoon from "../icons/IconMoon";
 import IconSun from "../icons/IconSun";
-import IconMenu from "../icons/IconMenu";
-import ToggleTheme from "../common/ToggleTheme";
+
 
 
 
