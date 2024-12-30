@@ -1,9 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { Headline } from '../ui/Headline';
-import FAQ from './FAQ';
 import { Separator } from './Separator';
-
-
 
 interface Item {
   title?: string;
@@ -21,7 +18,6 @@ interface Props {
   isDark?: boolean;
   classes?: any;
 }
-
 
 
 export default component$((props: Props) => {
@@ -177,7 +173,7 @@ export default component$((props: Props) => {
                 class="px-5 py-3 text-sm font-medium text-center text-white rounded-lg bg-primary sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
                 message</button>
             </form>
-            <FAQ/>
+        
           </div>
 
         

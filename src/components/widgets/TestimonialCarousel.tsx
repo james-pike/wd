@@ -3,12 +3,12 @@ import { Carousel } from 'flowbite-qwik';
 
 export default component$(() => {
   return (
-    <div class="p-2 rounded-lg bg-gray-100 shadow-md">
+    <div class="p-2 rounded-lg bg-primary/50 shadow-md">
 
     <Carousel class="!h-96" pauseOnHover>
             <Carousel.Slide>
         <section
-          class="isolate overflow-hidden bg-white px-6 lg:px-8 border-radius-dot-25 rounded-lg"
+          class="isolate overflow-hidden px-6 lg:px-8 border-radius-dot-25 rounded-lg"
           style={{
             background: `radial-gradient(50% 100% at top, var(--color-bg-accent, #f5f5f5), var(--color-bg-primary, white))`,
           }}
