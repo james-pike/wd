@@ -1,6 +1,5 @@
 
 import { $, component$, useComputed$, useStore, useVisibleTask$ } from "@builder.io/qwik";
-import { useContent } from "@builder.io/qwik-city";
 
 
 import { ThemeConfig, ThemeFonts, ThemeStyles, ThemeBaseColors, ThemePrimaryColors, ThemeBorderRadiuses, cn } from "@qwik-ui/utils";
