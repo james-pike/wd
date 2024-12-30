@@ -12,6 +12,7 @@ import { Button, buttonVariants } from "../button";
 import IconPalette from "../icons/IconPalette";
 import IconMoon from "../icons/IconMoon";
 import IconSun from "../icons/IconSun";
+import IconMenu from "../icons/IconMenu";
 
 
 
@@ -156,7 +157,8 @@ export default component$(() => {
           'flex sm:mr-2 sm:h-10',
         )}
       >
-        <IconPalette/>
+             <IconMenu />
+       
         <span class={cn('hidden', 'sm:block')}>Make it yours</span>
       </Modal.Trigger>
       <Modal.Panel >

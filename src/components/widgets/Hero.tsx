@@ -2,8 +2,12 @@ import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
   return (
+    <div class="relative bg-white/80 dark:bg-gray-900/80 overflow-hidden flex items-center justify-center mx-1.5 my-1 border-radius-dot-25 rounded-lg">
+
+
     <section class="relative rounded-b-xl rounded-t-sm  md:-mt-[76px] not-prose mx-1.5 my-1 bg-white/90 dark:bg-gray-900/90 border-radius-dot-25">
-        <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+        
+      
         
         <div class="relative max-w-7xl mx-auto px-4 sm:px-10 ">
           <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
@@ -30,12 +34,12 @@ export default component$(() => {
                     </button>
                   </div>
                   <div class="flex w-full">
-                    <button class="btn w-full bg-green-200 dark:bg-green-400">
+                    <button class="btn w-full bg-green-200 p-1 dark:bg-green-400">
                       Branding
                     </button>
                   </div>
                   <div class="flex w-full">
-                    <button class="btn w-full bg-yellow-200 dark:bg-yellow-400">
+                    <button class="btn w-full bg-yellow-200 p-1 dark:bg-yellow-400">
                       Marketing
                     </button>
                   </div>
@@ -66,5 +70,6 @@ export default component$(() => {
        
 
     </section>
+    </div>
   );
 });

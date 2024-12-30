@@ -8,7 +8,7 @@ export default component$(() => {
     <Carousel class="!h-96" pauseOnHover>
             <Carousel.Slide>
         <section
-          class="isolate overflow-hidden bg-white px-6 lg:px-8"
+          class="isolate overflow-hidden bg-white px-6 lg:px-8 border-radius-dot-25 rounded-lg"
           style={{
             background: `radial-gradient(50% 100% at top, var(--color-bg-accent, #f5f5f5), var(--color-bg-primary, white))`,
           }}
@@ -66,7 +66,7 @@ export default component$(() => {
       </Carousel.Slide>
       <Carousel.Slide>
         <section
-          class="isolate overflow-hidden bg-white px-6 lg:px-8"
+          class="isolate overflow-hidden bg-white px-6 lg:px-8 rounded-lg border-radius-dot-25"
           style={{
             background: `radial-gradient(50% 100% at top, var(--color-bg-accent, #f5f5f5), var(--color-bg-primary, white))`,
           }}
@@ -124,7 +124,7 @@ export default component$(() => {
       </Carousel.Slide>
       <Carousel.Slide>
         <section
-          class="isolate overflow-hidden bg-white px-6 lg:px-8"
+          class="isolate overflow-hidden bg-white px-6 lg:px-8  rounded-lg border-radius-dot-25"
           style={{
             background: `radial-gradient(50% 100% at top, var(--color-bg-accent, #f5f5f5), var(--color-bg-primary, white))`,
           }}
