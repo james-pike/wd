@@ -2,14 +2,11 @@
 import { $, component$, useComputed$, useStore, useVisibleTask$ } from "@builder.io/qwik";
 import { useContent } from "@builder.io/qwik-city";
 
-import ToggleMenu from "~/components/common/ToggleMenu";
-import IconChevronDown from "../icons/IconChevronDown";
-import { Logo } from "../common/Logo";
+
 import { ThemeConfig, ThemeFonts, ThemeStyles, ThemeBaseColors, ThemePrimaryColors, ThemeBorderRadiuses, cn } from "@qwik-ui/utils";
 import { useTheme } from "~/lib/provider";
 
-import IconMoon from "../icons/IconMoon";
-import IconSun from "../icons/IconSun";
+
 import { Button, buttonVariants } from "../button";
 import { Modal } from "@qwik-ui/headless";
 import IconMenu from "../icons/IconMenu";
