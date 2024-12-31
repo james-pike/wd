@@ -1,6 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { Headline } from '../ui/Headline';
-import { Separator } from './Separator';
+import { Separator } from '../ui/Separator';
 
 interface Item {
   title?: string;

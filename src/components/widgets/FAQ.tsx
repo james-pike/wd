@@ -1,5 +1,5 @@
 import { component$ } from '@builder.io/qwik';
-import { Accordion } from './Accordion';
+import { Accordion } from '../ui/Accordion';
 
 export default component$(() => {
   return (

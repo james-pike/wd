@@ -1,8 +1,8 @@
 import { component$ } from '@builder.io/qwik';
 import { Headline } from '../ui/Headline';
-import { Separator } from './Separator';
-import { Tabs } from '../Tabs';
-import { Card } from '../Card';
+import { Separator } from '../ui/Separator';
+import { Tabs } from '../ui/Tabs';
+import { Card } from '../ui/Card';
 
 
 
