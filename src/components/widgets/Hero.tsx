@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
   return (
-       <div class="relative bg-white/80 dark:bg-gray-900/80 overflow-hidden flex items-center justify-center mx-1.5 my-1 border-radius-dot-25 rounded-xl">
+       <div class="relative bg-white/80 dark:bg-gray-900/80 overflow-hidden flex items-center justify-center mx-1 my-1 border-radius-dot-25 rounded-xl">
 
 
     <section class="relative rounded-xl  md:-mt-[76px] not-prose mx-1.5 my-1.5 bg-white/90 dark:bg-gray-900/90 border-radius-dot-25">
