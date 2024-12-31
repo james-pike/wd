@@ -29,7 +29,7 @@ export default component$((props: Props) => {
       <div class="relative max-w-4xl mx-auto px-1.5 py-1.5 lg:px-8">
         <div class="max-w-3xl mx-auto lg:mt-24 bg-white/95 dark:bg-slate-900/95 rounded-lg pt-6 p-3 border-radius-dot-25">
           <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
-<section class="bg-white dark:bg-gray-900">
+<section class="">
         <div class="py-6 px-0 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
          
           <div class="grid gap-8 lg:grid-cols-3">
