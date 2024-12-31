@@ -120,7 +120,7 @@ export default component$(() => {
       }}
     >
 
-      <div class="border-radius-dot-25 rounded-t-2xl rounded-b-sm mt-1.5 mx-1.5 bg-white/90 dark:bg-gray-900/90">
+      <div class="border-radius-dot-25  bg-white/90 dark:bg-gray-900/90">
 
         <div class="relative text-default py-3 sm:py-2 px-3 md:px-6 mx-auto w-full md:flex md:justify-between max-w-7xl">
           <div class="mr-auto rtl:mr-0 rtl:ml-auto flex justify-between">
