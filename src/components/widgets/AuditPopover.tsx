@@ -14,7 +14,7 @@ export default component$(() => {
         </a>
       </Popover.Trigger>
       <Popover.Panel>
-        <div class="grid gap-4">
+        <div class="grid gap-4 w-full">
           <div class="space-y-2">
             <h4 class="font-medium leading-none">Dimensions</h4>
             <p class="text-sm text-muted-foreground">Set the dimensions for the layer.</p>
