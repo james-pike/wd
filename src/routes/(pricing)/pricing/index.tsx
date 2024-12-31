@@ -9,7 +9,7 @@ export default component$(() => {
     <>
       <PriceTabs highlight="Pricing"
         title="Flexible Pricing Options"
-        subtitle="Choose a one-time payment or pay it off over a longer period."
+        // subtitle="Choose a one-time payment or pay it off over a longer period."
          items={[ {
 
           },
