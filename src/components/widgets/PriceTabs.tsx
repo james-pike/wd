@@ -29,9 +29,9 @@ export default component$((props: Props) => {
   const { title = "", subtitle = "", highlight = "", classes = {} } = props;
 
   return (
-    <div class="relative bg-white/80 dark:bg-gray-900/80 overflow-hidden flex items-center justify-center mx-1.5 mt-1 mb-1.5 border-radius-dot-25 rounded-xl">
-      <div class="relative max-w-4xl mx-1.5 my-1.5 lg:px-8">
-        <div class="max-w-3xl mx-auto lg:mt-24 bg-white/95 dark:bg-slate-900/95 rounded-xl pt-6 p-3 border-radius-dot-25">
+    <div class="relative bg-white/80 dark:bg-gray-900/80 overflow-hidden flex items-center justify-center mx-1.5 my-1 pb-1 border-radius-dot-25 rounded-lg">
+      <div class="relative max-w-4xl mx-1.5 my-1.5 lg:px-8 rounded-lg">
+        <div class="max-w-3xl mx-auto lg:mt-24 bg-white/95 dark:bg-slate-900/95 rounded-sm pt-6 p-3 border-radius-dot-25">
           <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
                       <Separator class="my-4" />
           
