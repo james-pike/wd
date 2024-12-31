@@ -4,8 +4,7 @@
 
 - [About](/about)
 - [Pricing](/pricing)
-- [Clients](/clients)
-- [Reviews](/reviews)
+- [Clients](/reviews)
 - [Contact](/contact)
 
 ## [Blog](/blog)
