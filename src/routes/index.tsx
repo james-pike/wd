@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import Features from "~/components/widgets/Features";
 
 import Hero from "~/components/widgets/Hero";
 
@@ -24,6 +25,15 @@ export default component$(() => {
     <>
 
 <Hero />
+   <Features highlight="Get In Touch"
+        title="Contact Us For A Consultation"
+        subtitle="We're glad to learn about your business and discuss possible options."
+         items={[ {
+
+          },
+        ]}
+        
+      />
 
 {/* <TestimonialCarousel  />
 <FAQ />
