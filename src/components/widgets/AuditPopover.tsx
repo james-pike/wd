@@ -1,6 +1,5 @@
 import { component$ } from '@builder.io/qwik';
 import { Popover } from '../ui/Popover';
-import { buttonVariants } from '../ui/button';
 import { Label } from '../ui/Label';
 import { Input } from '../ui/Input';
 
