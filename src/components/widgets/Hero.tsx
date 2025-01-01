@@ -1,5 +1,6 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, } from "@builder.io/qwik";
 import AuditPopover from "./AuditPopover";
+import { Image } from "@unpic/qwik";
 
 export default component$(() => {
   return (
@@ -54,8 +55,8 @@ export default component$(() => {
 
 
             <div class="basis-1/2 ">
-              {/* <Image
-    src="/images/froppy.png"
+              <Image
+    src="/images/Froppy.png"
     layout="intrinsic" 
     width={443.7}
     height={554.4}
@@ -63,7 +64,7 @@ export default component$(() => {
     class="mx-auto lg:mr-0 w-full max-w-[90%] sm:max-w-[70%] drop-shadow-2xl rounded-md"
     priority={true}
     breakpoints={[320, 480, 640, 768, 1024]}
-  /> */}
+  />
             </div>
 
           </div>
