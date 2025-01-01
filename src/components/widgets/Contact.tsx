@@ -28,7 +28,7 @@ export default component$((props: Props) => {
         <div class="relative max-w-4xl mx-auto px-1.5 py-1.5 lg:px-8">
           <div class="max-w-3xl mx-auto lg:mt-24 bg-white/95 dark:bg-slate-900/95 rounded-lg pt-6 p-3 border-radius-dot-25">
             <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
-            <dl class="mt-10 flex flex-wrap gap-x-10 gap-y-6 text-base/7 text-gray-600">
+            <dl class="mt-8 flex flex-wrap gap-x-10 gap-y-6 text-base/7 text-gray-600">
   <div class="flex items-start gap-x-4">
     <dt class="flex-none">
       <span class="sr-only">Address</span>
@@ -54,7 +54,7 @@ export default component$((props: Props) => {
         <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
       </svg>
     </dt>
-    <dd><a class="hover:text-gray-900" href="mailto:hello@example.com">hello@example.com</a></dd>
+    <dd><a class="hover:text-gray-900" href="mailto:hello@example.com">james@webdev.ca</a></dd>
   </div>
   
 </dl>
