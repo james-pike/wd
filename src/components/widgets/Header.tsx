@@ -83,12 +83,7 @@ export default component$(() => {
     return [font, mode, style, baseColor, primaryColor, borderRadius].join(" ");
   });
 
-  const toggleTheme = $(() => {
-    const newTheme = store.theme === "light" ? "dark" : "light";
-    store.theme = newTheme;
-    document.documentElement.classList.toggle("dark", newTheme === "dark");
-    localStorage.setItem("theme", newTheme);
-  });
+ 
 
   return (
     <>
