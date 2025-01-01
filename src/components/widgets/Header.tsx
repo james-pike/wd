@@ -1,5 +1,4 @@
 import { $, component$, useComputed$, useStore, useVisibleTask$ } from "@builder.io/qwik";
-import { useContent } from "@builder.io/qwik-city";
 
 import { Logo } from "../common/Logo";
 import {
@@ -13,12 +12,12 @@ import {
 import { useTheme } from "~/lib/provider";
 import IconMoon from "../icons/IconMoon";
 import IconSun from "../icons/IconSun";
-
+import ToggleX from "./ToggleX";
 import FAQ from "./FAQ";
 
 export default component$(() => {
   const { themeSig } = useTheme();
-  const { menu } = useContent();
+ 
 
   const store = useStore({
     theme: (typeof window !== "undefined" && window.localStorage.theme) || "light",
@@ -121,16 +120,26 @@ export default component$(() => {
             >
               {store.isExpanded ? "Close" : "Menu"}
             </button>
+            <button
+                      type="button"
+                      class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+                      aria-label="Toggle between Dark and Light mode"
+                      onClick$={async () => {
+                        themeComputedObjectSig.value.mode =
+                          themeComputedObjectSig.value.mode?.includes('light') ? 'dark' : 'light';
+                        themeSig.value = await themeStoreToThemeClasses$();
+                      }}
+                    >
+                      {store.theme == "dark" ? (
+                        <IconMoon />
+                      ) : (
+                        <IconSun />
+                      )}
+                    </button>
+                    <ToggleX/>
           </div>
         </div>
-        <div class="flex items-center space-x-4">
-          <button
-            class="p-2 rounded focus:outline-none focus:ring focus:ring-gray-300 dark:focus:ring-gray-700"
-        
-          >
-            {store.theme === "light" ? <IconMoon /> : <IconSun />}
-          </button>
-        </div>
+     
       </div>
     </div>
   </header>
