@@ -13,7 +13,6 @@ import { useTheme } from "~/lib/provider";
 import IconMoon from "../icons/IconMoon";
 import IconSun from "../icons/IconSun";
 import ToggleX from "./ToggleX";
-import FAQ from "./FAQ";
 import MenuAccordion from "./MenuAccordion";
 
 export default component$(() => {
