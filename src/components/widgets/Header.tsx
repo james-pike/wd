@@ -14,6 +14,7 @@ import IconMoon from "../icons/IconMoon";
 import IconSun from "../icons/IconSun";
 import ToggleX from "./ToggleX";
 import FAQ from "./FAQ";
+import MenuAccordion from "./MenuAccordion";
 
 export default component$(() => {
   const { themeSig } = useTheme();
@@ -153,18 +154,8 @@ export default component$(() => {
       style="--header-height: 4rem;" // Adjust based on your header's height
     >
       <div class="relative">
-        <button
-          type="button"
-          class="absolute top-4 right-4 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
-          aria-label="Close menu"
-          onClick$={() => {
-            store.isExpanded = false;
-            document.body.classList.remove("overflow-hidden");
-          }}
-        >
-          Close
-        </button>
-        <FAQ />
+     
+        <MenuAccordion />
       </div>
     </div>
   )}
