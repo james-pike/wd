@@ -1,7 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { Headline } from '../ui/Headline';
 
-
 interface Item {
   title?: string;
   description?: string;
@@ -18,8 +17,6 @@ interface Props {
   isDark?: boolean;
   classes?: any;
 }
-
-
 
 export default component$((props: Props) => {
   const { title = "", subtitle = "", highlight = "", classes = {} } = props;

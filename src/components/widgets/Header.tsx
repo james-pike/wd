@@ -147,7 +147,7 @@ export default component$(() => {
         store.isExpanded ? "translate-y-0" : "-translate-y-full"
       }`}
       style="--header-height: 4rem;">
-      <div class="relative mx-2">
+      <div class="relative">
         <MenuAccordion />
       </div>
     </div>
