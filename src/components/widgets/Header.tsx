@@ -1,5 +1,4 @@
 import { $, component$, useComputed$, useStore, useVisibleTask$ } from "@builder.io/qwik";
-
 import { Logo } from "../common/Logo";
 import {
   ThemeConfig,
@@ -18,7 +17,6 @@ import MenuAccordion from "./MenuAccordion";
 export default component$(() => {
   const { themeSig } = useTheme();
  
-
   const store = useStore({
     theme: (typeof window !== "undefined" && window.localStorage.theme) || "light",
     primaryColor: (typeof window !== "undefined" && window.localStorage.primaryColor) || ThemePrimaryColors.CYAN600,
@@ -82,11 +80,9 @@ export default component$(() => {
   });
 
  
-
   return (
     <>
 <div class="relative">
-  {/* Header */}
   <header
     id="header"
     class={`sticky top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0 transition-[opacity] ease-in-out ${
@@ -150,19 +146,13 @@ export default component$(() => {
       class={`absolute inset-x-0 top-[calc(var(--header-height))] z-30 bg-white dark:bg-gray-900 transition-transform duration-300 ${
         store.isExpanded ? "translate-y-0" : "-translate-y-full"
       }`}
-      style="--header-height: 4rem;" // Adjust based on your header's height
-    >
+      style="--header-height: 4rem;">
       <div class="relative">
-     
         <MenuAccordion />
       </div>
     </div>
   )}
 
-  {/* Hero Section */}
-  <div class="relative">
-  
-  </div>
 </div>
 
 
