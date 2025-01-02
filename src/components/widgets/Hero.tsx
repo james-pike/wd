@@ -1,5 +1,4 @@
 import { component$, } from "@builder.io/qwik";
-import AuditPopover from "./AuditPopover";
 import { Image } from "@unpic/qwik";
 
 export default component$(() => {
@@ -15,7 +14,10 @@ export default component$(() => {
           <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
           <div class="pt-6 md:py-20 lg:py-0 lg:flex lg:items-center lg:h-screen lg:gap-8">
             <div class="basis-1/2 text-center lg:text-left pb-8 md:pb-16 mx-auto">
-              <AuditPopover />
+            <a href="/resources" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-6 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+            <span class="text-xs bg-primary rounded-full text-white px-4 py-1.5 mr-3">New</span> <span class="text-sm font-medium">Free Website & SEO Audit!</span> 
+            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+        </a>
               <h1 class="text-5xl md:text-7xl font-bold leading-tighter tracking-tighter text-primary mb-4 font-heading dark:text-gray-200">
                 Build A Better Website <br class="hidden lg:block" />{" "}
                 {/* <span class="text-sky-500">The Kaspian Frog</span> */}
