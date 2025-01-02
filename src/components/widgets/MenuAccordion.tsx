@@ -3,10 +3,10 @@ import { Accordion } from '../ui/Accordion';
 
 export default component$(() => {
   return (
-    <Accordion.Root class="w-full px-5 dark:text-gray-50 ">
+    <Accordion.Root class="w-full px-5 dark:text-gray-50  ">
       {/* Services Section */}
       <Accordion.Item>
-        <Accordion.Trigger class="text-xl flex justify-between hover:text-primary items-center py-3 border-b border-gray-300 dark:border-primary">
+        <Accordion.Trigger class="text-xl flex justify-between hover:text-primary items-center py-3 border-b border-gray-300 dark:border-gray-700">
           <span>About</span>
         </Accordion.Trigger>
         <Accordion.Content class=" py-2">
@@ -27,7 +27,7 @@ export default component$(() => {
       </Accordion.Item>
 
       <Accordion.Item>
-        <Accordion.Trigger class="text-xl flex justify-between hover:text-primary items-center py-3 border-b border-gray-300 dark:border-primary">
+        <Accordion.Trigger class="text-xl flex justify-between hover:text-primary items-center py-3 border-b border-gray-300 dark:border-gray-700">
           <span>About</span>
         </Accordion.Trigger>
         <Accordion.Content class=" py-2">
@@ -48,7 +48,7 @@ export default component$(() => {
       </Accordion.Item>
 
       <Accordion.Item>
-        <Accordion.Trigger class="text-xl flex justify-between hover:text-primary items-center py-3 border-b border-gray-300 dark:border-primary">
+        <Accordion.Trigger class="text-xl flex justify-between hover:text-primary items-center py-3 border-b border-gray-300 dark:border-gray-700">
           <span>About</span>
         </Accordion.Trigger>
         <Accordion.Content class=" py-2">
