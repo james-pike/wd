@@ -29,7 +29,7 @@ const Trigger = component$<
       <HeadlessAccordion.Trigger
         {...props}
         class={cn(
-          'flex flex-1 items-center justify-between py-4 text-sm font-normal transition-all [&[data-open]>svg]:rotate-180',
+          'flex flex-1 items-center justify-between py-4 text-sm font-normal transition-all [&[data-open]>svg]:rotate-180   ',
           props.class,
         )}
       >
