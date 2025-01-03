@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import Hero from "~/components/widgets/Hero";
-import MemeCarousel from "~/components/widgets/MemeCarousel";
+import Memes from "~/components/widgets/Memes";
 import { SITE } from "~/config.mjs";
 
 export default component$(() => {
@@ -9,9 +9,16 @@ export default component$(() => {
     <>
 
 <Hero />
-<MemeCarousel/>
 
 
+      <Memes highlight="Froppy Memes"
+        title="Share Memes & Win Prizes"
+        subtitle="Top Raiders receive bonus Froppy weekly (could be tracked in a data table below)"
+         items={[ {
+
+          },
+        ]}
+      />
 
 
       

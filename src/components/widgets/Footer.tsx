@@ -53,11 +53,20 @@ export default component$(() => {
       <div class="max-w-7xl mx-auto px-4 bg-white/90 dark:bg-gray-900 shadow-lg border-radius-dot-25 rounded-lg">
         <div class="grid grid-cols-12 gap-4 gap-y-4 sm:gap-8 pt-6 pb-2 md:py-12">
           <div class="col-span-12 lg:col-span-4 pr-8">
-            <div class="mb-4">
-              <Link class="inline-block font-bold dark:text-gray-50 text-2xl" href={"/"}>
-                Webdev.ca
-              </Link>
-            </div>
+          <div class="flex items-center mb-4">
+  <img
+    src="/images/Froppy.png"
+    alt="Froppy"
+    class="w-6 h-6 mr-2"
+  />
+  <Link
+    class="inline-block font-bold dark:text-gray-50 text-2xl"
+    href={"/"}
+  >
+    Froppy
+  </Link>
+</div>
+
             <div class="text-sm text-gray-600 dark:text-gray-400">
               Transform your online presence with our custom web design and development services. We help businesses create stunning, fast, and secure websites.
             </div>
@@ -102,9 +111,9 @@ export default component$(() => {
          
             Made with {" "}<span class="text-primary mx-1">♥</span> by&nbsp;
             <a class="text-gray-900 underline dark:text-gray-200" href="#">
-              Webdev.ca
+              Webdev.ca&nbsp;
             </a>{" "}
-            + 
+            & 
             <a class="text-gray-900 underline dark:text-gray-200" href="#">
               Nft.cx
             </a>
