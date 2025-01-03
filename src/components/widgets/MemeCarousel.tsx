@@ -42,7 +42,7 @@ export default component$(() => {
           </Carousel.Bullet>
         ))}
       </Carousel.Pagination> */}
-  <div class="carousel-buttons flex justify-between bg-primary/30 items-center w-full p-4">
+  <div class="carousel-buttons flex justify-between bg-primary/50 items-center w-full p-4">
   <div class="flex items-center space-x-4">
     {/* Left buttons for navigation */}
 
