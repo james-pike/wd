@@ -8,7 +8,7 @@ export default component$(() => {
     <>
       <Audit highlight="Reviews"
         title="Reviews From Our Clients"
-        subtitle="Choose a one-time payment or pay it off over a longer period."
+        subtitle="Case studies and testimonials from our past work."
          items={[ {
 
           },
