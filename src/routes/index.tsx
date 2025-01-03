@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import Bento from "~/components/widgets/Bento";
 import Hero from "~/components/widgets/Hero";
+import MemeCarousel from "~/components/widgets/MemeCarousel";
 import { SITE } from "~/config.mjs";
 
 export default component$(() => {
@@ -9,7 +9,7 @@ export default component$(() => {
     <>
 
 <Hero />
-<Bento/>
+<MemeCarousel/>
 
 
 
