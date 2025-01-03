@@ -106,9 +106,9 @@ export default component$(() => {
          
             Made with {" "}<span class="text-primary mx-1">♥</span> by&nbsp;
             <a class="text-gray-900 underline dark:text-gray-200" href="#">
-              Webdev.ca&nbsp;
+              Webdev.ca
             </a>{" "}
-            & 
+            &nbsp; & &nbsp;
             <a class="text-gray-900 underline dark:text-gray-200" href="#">
               Nft.cx
             </a>
