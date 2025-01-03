@@ -108,7 +108,7 @@ export default component$(() => {
             <a class="text-gray-900 underline dark:text-gray-200" href="#">
               Webdev.ca
             </a>{" "}
-            &nbsp; & &nbsp;
+            &nbsp;&&nbsp;
             <a class="text-gray-900 underline dark:text-gray-200" href="#">
               Nft.cx
             </a>

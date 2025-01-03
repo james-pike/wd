@@ -42,7 +42,7 @@ export default component$(() => {
           </Carousel.Bullet>
         ))}
       </Carousel.Pagination> */}
-  <div class="carousel-buttons flex justify-between bg-blue-500 items-center w-full p-4">
+  <div class="carousel-buttons flex justify-between bg-primary/30 items-center w-full p-4">
   <div class="flex items-center space-x-4">
     {/* Left buttons for navigation */}
     <Carousel.Previous>Prev</Carousel.Previous>
@@ -52,25 +52,26 @@ export default component$(() => {
       aria-label="Share on Twitter"
       onClick$={() => shareOnTwitter()}
     >
-      Pause
+      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-player-pause"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 5m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" /><path d="M14 5m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" /></svg>
     </button>
   </div>
   <div class="flex items-center space-x-4">
     {/* Right buttons for sharing */}
-    {/* <button
+    <button
       class="carousel-btn flex items-center space-x-2"
       aria-label="Share on Twitter"
       onClick$={() => shareOnTwitter()}
     >
-      Like
+      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-contract"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 21h-2a3 3 0 0 1 -3 -3v-1h5.5" /><path d="M17 8.5v-3.5a2 2 0 1 1 2 2h-2" /><path d="M19 3h-11a3 3 0 0 0 -3 3v11" /><path d="M9 7h4" /><path d="M9 11h4" /><path d="M18.42 12.61a2.1 2.1 0 0 1 2.97 2.97l-6.39 6.42h-3v-3z" /></svg>
     </button>
     <button
       class="carousel-btn flex items-center space-x-2"
       aria-label="Share on Twitter"
       onClick$={() => shareOnTwitter()}
     >
-      Reply
-    </button> */}
+      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+    </button>
+
     <button
       class="carousel-btn flex items-center space-x-2"
       aria-label="Share on Twitter"
