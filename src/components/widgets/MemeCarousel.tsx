@@ -14,7 +14,7 @@ export default component$(() => {
 
   const shareOnTwitter = $(() => {
 
-    const twitterUrl = `https://twitter.com/intent/retweet?tweet_id=463440424141459456`;
+    const twitterUrl = `https://twitter.com/intent/retweet?tweet_id=1874968926096171242`;
     window.open(twitterUrl, '_blank');
   });
 
@@ -24,7 +24,7 @@ export default component$(() => {
   });
 
   return (
-    <Carousel.Root class="carousel-root max-w-6xl mx-auto " draggable={false} autoPlayIntervalMs={2500}
+    <Carousel.Root class="carousel-root max-w-6xl mx-auto " draggable={false} autoPlayIntervalMs={3000}
     bind:autoplay={isPlaying} slidesPerView={isMobile.value ? 1 : 1} gap={8}>
     
       <Carousel.Scroller class="carousel-scroller ">
@@ -45,15 +45,17 @@ export default component$(() => {
   <div class="carousel-buttons flex justify-between bg-primary/30 items-center w-full p-4">
   <div class="flex items-center space-x-4">
     {/* Left buttons for navigation */}
-    <Carousel.Previous>Prev</Carousel.Previous>
-    <Carousel.Next>Next</Carousel.Next>
+
+    <Carousel.Previous><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-player-skip-back"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 5v14l-12 -7z" /><path d="M4 5l0 14" /></svg></Carousel.Previous>
     <button
       class="carousel-btn flex items-center space-x-2"
       aria-label="Share on Twitter"
-      onClick$={() => shareOnTwitter()}
+     onClick$={() => (isPlaying.value = !isPlaying.value)}
     >
       <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-player-pause"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 5m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" /><path d="M14 5m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" /></svg>
     </button>
+    <Carousel.Next><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-player-skip-forward"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 5v14l12 -7z" /><path d="M20 5l0 14" /></svg></Carousel.Next>
+   
   </div>
   <div class="flex items-center space-x-4">
     {/* Right buttons for sharing */}
