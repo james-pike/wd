@@ -104,6 +104,10 @@ export default component$(() => {
             <a class="text-gray-900 underline dark:text-gray-200" href="#">
               Webdev.ca
             </a>{" "}
+            + 
+            <a class="text-gray-900 underline dark:text-gray-200" href="#">
+              Nft.cx
+            </a>
             <span class="hidden md:inline"> · All rights reserved.</span>
           </div>
         </div>
