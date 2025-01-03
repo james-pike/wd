@@ -1,5 +1,4 @@
 import { component$, } from "@builder.io/qwik";
-import { Image } from "@unpic/qwik";
 
 export default component$(() => {
   return (
@@ -57,16 +56,7 @@ export default component$(() => {
 
 
             <div class="basis-1/2 ">
-              <Image
-    src="/images/Froppy.png"
-    layout="intrinsic" 
-    width={443.7}
-    height={554.4}
-    alt="Kroppy Hero Image (Fun Dog)"
-    class="mx-auto lg:mr-0 w-full max-w-[90%] sm:max-w-[70%] drop-shadow-2xl rounded-md"
-    priority={true}
-    breakpoints={[320, 480, 640, 768, 1024]}
-  />
+            <img src="https://cdn.svgator.com/images/2021/10/solar-system-animation.svg" width="700" height="400" fetchPriority="high" alt="Animated Vectors Flying to the Moon and Back: About the Space Animation Trend"/>
             </div>
 
           </div>
