@@ -54,11 +54,6 @@ export default component$(() => {
         <div class="grid grid-cols-12 gap-4 gap-y-4 sm:gap-8 pt-6 pb-2 md:py-12">
           <div class="col-span-12 lg:col-span-4 pr-8">
           <div class="flex items-center mb-4">
-  <img
-    src="/images/Froppy.png"
-    alt="Froppy"
-    class="w-6 h-6 mr-2"
-  />
   <Link
     class="inline-block font-bold dark:text-gray-50 text-2xl"
     href={"/"}
