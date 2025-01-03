@@ -7,16 +7,14 @@ import {
   ThemeBaseColors,
   ThemePrimaryColors,
   ThemeBorderRadiuses,
-  cn,
+  
 } from "@qwik-ui/utils";
 import { useTheme } from "~/lib/provider";
 import IconMoon from "../icons/IconMoon";
 import IconSun from "../icons/IconSun";
 import MenuAccordion from "./MenuAccordion";
-import { Modal } from "@qwik-ui/headless";
-import { Button, buttonVariants } from "../ui/button";
+
 // import IconMenu from "../icons/IconMenu";
-import IconPalette from "../icons/IconPalette";
 import IconMenu from "../icons/IconMenu";
 
 export default component$(() => {
