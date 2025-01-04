@@ -102,47 +102,82 @@ export default component$(() => {
     }}
   >
     <div class="border-radius-dot-25 bg-white/90 dark:bg-gray-900/90">
-      <div class="relative text-default py-3 sm:py-2 px-3 md:px-6 mx-auto w-full md:flex md:justify-between max-w-7xl">
-        <div class="mr-auto rtl:mr-0 rtl:ml-auto flex justify-between">
-          <a class="flex items-center" href={"/"}>
-            <Logo />
-          </a>
-          <div class="flex items-center md:hidden">
-          
-          
+    <div class="relative text-default py-3 sm:py-2 px-3 md:px-6 mx-auto w-full md:flex md:justify-between items-center max-w-7xl">
+  <div class="flex items-center justify-between w-full md:w-auto">
+    <a class="flex items-center" href={"/"}>
+      <Logo />
+    </a>
+    <div class="flex items-center md:hidden">
+      <button
+        type="button"
+        class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+        aria-label="Toggle between Dark and Light mode"
+        onClick$={async () => {
+          themeComputedObjectSig.value.mode =
+            themeComputedObjectSig.value.mode?.includes("light") ? "dark" : "light";
+          themeSig.value = await themeStoreToThemeClasses$();
+        }}
+      >
+        {store.theme == "dark" ? <IconMoon /> : <IconSun />}
+      </button>
+      <button
+        type="button"
+        class="text-gray-50 bg-primary dark:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-sm text-sm p-2.5 inline-flex items-center"
+        aria-label="Toggle menu"
+        onClick$={() => {
+          store.isExpanded = !store.isExpanded;
+          document.body.classList.toggle("overflow-hidden", store.isExpanded);
+        }}
+      >
+        <IconMenu />
+      </button>
+    </div>
+  </div>
 
-                            <button
-                      type="button"
-                      class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-                      aria-label="Toggle between Dark and Light mode"
-                      onClick$={async () => {
-                        themeComputedObjectSig.value.mode =
-                          themeComputedObjectSig.value.mode?.includes('light') ? 'dark' : 'light';
-                        themeSig.value = await themeStoreToThemeClasses$();
-                      }}
-                    >
-                      {store.theme == "dark" ? (
-                        <IconMoon />
-                      ) : (
-                        <IconSun />
-                      )}
-                    </button>
+  {/* Center-Aligned Navigation */}
+  <nav class="hidden md:flex items-center justify-center space-x-6 mx-auto">
+    <a
+      href="#home"
+      class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+    >
+      Story
+    </a>
+    <a
+      href="#about"
+      class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+    >
+      Roadmap
+    </a>
+    <a
+      href="#services"
+      class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+    >
+      Games
+    </a>
+    <a
+      href="#contact"
+      class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+    >
+      Community
+    </a>
+    <a
+      href="#contact"
+      class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+    >
+      Merch
+    </a>
+  </nav>
 
-                            <button
-              type="button"
-              class="text-gray-50 bg-primary dark:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-sm text-sm p-2.5 inline-flex items-center"
-              aria-label="Toggle menu"
-              onClick$={() => {
-                store.isExpanded = !store.isExpanded;
-                document.body.classList.toggle("overflow-hidden", store.isExpanded);
-              }}
-            >
-              <IconMenu/>
-            </button>
-          </div>
-        </div>
-     
-      </div>
+  {/* Call to Action Button */}
+  <div class="hidden md:flex items-center">
+    <a
+      href="#cta"
+      class="px-4 py-2 text-white bg-primary hover:bg-primary-dark rounded-lg shadow-md transition-colors"
+    >
+      Buy $Froppy
+    </a>
+  </div>
+</div>
     </div>
   </header>
 
@@ -152,14 +187,15 @@ export default component$(() => {
       class={`absolute inset-x-0 top-[calc(var(--header-height))] z-30 bg-white dark:bg-gray-900 transition-transform duration-300 ${
         store.isExpanded ? "translate-y-0" : "-translate-y-full"
       }`}
-      style="--header-height: 4rem;">
+      style="--header-height: 4rem;"
+    >
       <div class="relative">
         <MenuAccordion />
       </div>
     </div>
   )}
-
 </div>
+
 
 
     </>
