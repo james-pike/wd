@@ -32,7 +32,7 @@ export default component$(() => {
           </div>
         </Accordion.Content>
       </Accordion.Item>
-
+{/* 
 
   
 
@@ -41,7 +41,7 @@ export default component$(() => {
           <span>Clients</span>
         </Accordion.Trigger>
         <Accordion.Content class=" py-2">
-          {/* Service Links with Highlight and Divider */}
+        
           <div class="hover:bg-primary/35 transition border-b border-gray-300 dark:border-gray-700 last:border-none">
             <a href="/" class="block text-lg py-3 px-2">Web Design</a>
           </div>
@@ -55,7 +55,7 @@ export default component$(() => {
             <a href="/" class="block text-lg py-3 px-2">Brand Strategy</a>
           </div>
         </Accordion.Content>
-      </Accordion.Item>
+      </Accordion.Item> */}
 
       <Accordion.Item class="dark:border-gray-700">
         <Accordion.Trigger class="text-xl flex trigger-text justify-between hover:text-primary items-center py-3 border-b border-gray-300 dark:border-gray-700">
