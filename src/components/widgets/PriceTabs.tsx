@@ -33,7 +33,7 @@ export default component$((props: Props) => {
       <div class="relative max-w-4xl mx-1.5 my-1.5 lg:px-8 rounded-lg">
         <div class="max-w-3xl mx-auto lg:mt-24 bg-white/95 dark:bg-slate-900/95 rounded-sm pt-6 p-3 border-radius-dot-25">
           <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
-                      <Separator class="my-4" />
+                      {/* <Separator class="my-4" /> */}
           
 
           <Tabs.Root class="flex flex-col items-center">

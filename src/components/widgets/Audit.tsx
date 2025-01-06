@@ -27,7 +27,7 @@ export default component$((props: Props) => {
         <div class="max-w-7xl mx-auto lg:mt-24 bg-white/95 dark:bg-slate-900/95 rounded-lg pt-6 p-3 border-radius-dot-25">
           <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
 
-          <form action="#" class="grid max-w-screen-md pt-4 grid-cols-1 mx-auto gap-x-8 gap-y-6 sm:grid-cols-2">
+          <form action="#" class="grid max-w-screen-md pt-2 grid-cols-1 mx-auto gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
                 <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                   Website URL
