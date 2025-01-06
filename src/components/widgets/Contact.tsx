@@ -26,9 +26,9 @@ export default component$((props: Props) => {
     <div>
       <div class="relative bg-white/80 dark:bg-gray-900/80 overflow-hidden flex items-center justify-center mx-1.5 my-1 border-radius-dot-25 rounded-lg">
         <div class="relative max-w-4xl mx-auto px-1.5 py-1.5 lg:px-8">
-          <div class="max-w-3xl mx-auto lg:mt-24 bg-white/95 dark:bg-slate-900/95 rounded-lg pt-6 p-3 border-radius-dot-25">
+          <div class="max-w-3xl mx-auto lg:mt-24 bg-white/95 dark:bg-slate-900/95 rounded-lg pt-6 p-5 border-radius-dot-25">
             <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
-            <dl class="mt-8 flex flex-wrap gap-x-10 gap-y-6 text-base/7 text-gray-600">
+            <dl class="mt-8 px-2 flex flex-wrap gap-x-10 gap-y-6 text-base/7 text-gray-600">
   <div class="flex items-start gap-x-4">
     <dt class="flex-none">
       <span class="sr-only">Address</span>
@@ -64,13 +64,13 @@ export default component$((props: Props) => {
             <form action="#" class="grid max-w-screen-md pt-8 grid-cols-1 mx-auto gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
                 <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                  First name
+                  Name
                 </label>
                 <input type="text" id="first-name"
                   class="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                   placeholder="Bonnie" required />
               </div>
-
+{/* 
               <div>
                 <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                   Last name
@@ -78,7 +78,7 @@ export default component$((props: Props) => {
                 <input type="text" id="last-name"
                   class="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                   placeholder="Green" required />
-              </div>
+              </div> */}
 
               <div>
                 <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
@@ -101,7 +101,7 @@ export default component$((props: Props) => {
               <div>
                 <div class="flex items-center gap-1.5 mb-2">
                   <label for="country" class="block text-sm font-medium text-gray-900 dark:text-gray-300">
-                    Country
+                    Service
                   </label>
                   <button type="button" data-popover-target="country-description" class="w-4 h-4">
                     <svg aria-hidden="true" class="text-gray-400 hover:text-gray-900 dark:hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -137,7 +137,7 @@ export default component$((props: Props) => {
                 </select>
               </div>
 
-              <div>
+              {/* <div>
                 <div class="flex items-center gap-1.5 mb-2">
                   <label for="language" class="block text-sm font-medium text-gray-900 dark:text-gray-300">
                     Language
@@ -170,7 +170,7 @@ export default component$((props: Props) => {
                   <option value="JP">Japanese</option>
                   <option value="NL">Dutch</option>
                 </select>
-              </div>
+              </div> */}
 
               <div class="sm:col-span-2">
                 <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
