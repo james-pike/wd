@@ -11,7 +11,7 @@ export default component$(() => {
 
 
       {/* <Memes highlight="Froppy Memes"
-        title="Share Memes & Win Prizes"
+        title="Share Memes & Wsin Prizes"
         subtitle="Top Raiders receive bonus Froppy every week"
          items={[ {
 
