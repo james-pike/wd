@@ -59,7 +59,7 @@ export default component$(() => {
 
       <Accordion.Item class="dark:border-gray-700">
         <Accordion.Trigger class="text-xl flex trigger-text justify-between hover:text-primary items-center py-3 border-b border-gray-300 dark:border-gray-700">
-        <a href="/pricing" class=" hover:underline">
+        <a href="/contact" class=" hover:underline">
   Contact Us
 </a>  
         </Accordion.Trigger>
