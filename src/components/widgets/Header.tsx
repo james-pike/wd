@@ -140,31 +140,31 @@ export default component$(() => {
       href="#home"
       class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
     >
-      Story
+      About
     </a>
     <a
       href="#about"
       class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
     >
-      Roadmap
+      Services
     </a>
     <a
       href="#services"
       class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
     >
-      Games
+      Clients
     </a>
     <a
       href="#contact"
       class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
     >
-      Community
+      Pricing
     </a>
     <a
       href="#contact"
       class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
     >
-      Merch
+      Contact
     </a>
   </nav>
 

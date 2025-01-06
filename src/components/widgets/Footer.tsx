@@ -58,7 +58,7 @@ export default component$(() => {
     class="inline-block font-bold dark:text-gray-50 text-2xl"
     href={"/"}
   >
-    Froppy
+    Webdev.ca
   </Link>
 </div>
 
